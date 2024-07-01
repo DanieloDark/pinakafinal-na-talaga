@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair Display:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=SF Pro Text:wght@400;500&display=swap"
+    />
+  </head>
+  <body>
+    <div class="requests">
+      <header class="main">
+        <div class="header">
+          <div class="header-child"></div>
+          <div class="logo">
+            <img
+              class="mask-group-icon"
+              loading="lazy"
+              alt=""
+              src="./public/mask-group@2x.png"
+            />
+
+            <a class="bpi">BPI</a>
+            <div class="frame-parent">
+              <div class="housing-loan-wrapper">
+                <a class="housing-loan">Housing Loan</a>
+              </div>
+              <div class="application-form-wrapper">
+                <a class="application-form">Application Form</a>
+              </div>
+            </div>
+          </div>
+          <nav class="header-inner">
+            <nav class="home-parent">
+              <a class="home" id="homeText">Home</a>
+              <a class="about" id="aboutText">About</a>
+              <a class="contact-agreement" id="contactAgreementText"
+                >Contact Agreement</a
+              >
+            </nav>
+          </nav>
+          <div class="primary-button">
+            <div class="get-started">LOGIN</div>
+          </div>
+        </div>
+        <button class="primary-button1" id="primaryButton">
+          <div class="logout">LOGOUT</div>
+        </button>
+      </header>
+      <div class="content">
+        <div class="rectangle-parent">
+          <div class="frame-child"></div>
+          <div class="menu-icons-parent">
+            <div class="menu-icons" id="menuIconsContainer">
+              <img
+                class="mask-group-icon1"
+                alt=""
+                src="./public/mask-group-1@2x.png"
+              />
+
+              <div class="profile-wrapper">
+                <b class="profile">Profile</b>
+              </div>
+            </div>
+            <div class="menu-icons1" id="menuIconsContainer1">
+              <img
+                class="mask-group-icon2"
+                alt=""
+                src="./public/mask-group-2@2x.png"
+              />
+
+              <div class="new-requests-wrapper">
+                <b class="new-requests">New Requests</b>
+              </div>
+            </div>
+            <div class="menu-icons2">
+              <img
+                class="mask-group-icon3"
+                alt=""
+                src="./public/mask-group-3@2x.png"
+              />
+
+              <b class="requests1">Requests</b>
+            </div>
+          </div>
+        </div>
+        <div class="requests-record-wrapper">
+          <h1 class="requests-record">Requests Record</h1>
+        </div>
+      </div>
+      <section class="footer">
+        <p class="all-rights-reserved-container">
+          <span class="all-rights-reserved">© 2024 All rights reserved. </span>
+          <span class="made-by-students"
+            >Made by students from Polytechnic University of the Philippines -
+            Manila.</span
+          >
+        </p>
+        <div class="footer-child"></div>
+      </section>
+    </div>
+
+    <script>
+      var homeText = document.getElementById("homeText");
+      if (homeText) {
+        homeText.addEventListener("click", function (e) {
+          window.location.href = "./landing-page.html";
+        });
+      }
+      
+      var aboutText = document.getElementById("aboutText");
+      if (aboutText) {
+        aboutText.addEventListener("click", function (e) {
+          window.location.href = "./about-us.html";
+        });
+      }
+      
+      var contactAgreementText = document.getElementById("contactAgreementText");
+      if (contactAgreementText) {
+        contactAgreementText.addEventListener("click", function (e) {
+          window.location.href = "./contact-agreement.html";
+        });
+      }
+      
+      var primaryButton = document.getElementById("primaryButton");
+      if (primaryButton) {
+        primaryButton.addEventListener("click", function (e) {
+          window.location.href = "./landing-page.html";
+        });
+      }
+      
+      var menuIconsContainer = document.getElementById("menuIconsContainer");
+      if (menuIconsContainer) {
+        menuIconsContainer.addEventListener("click", function (e) {
+          window.location.href = "./saved-profile.html";
+        });
+      }
+      
+      var menuIconsContainer1 = document.getElementById("menuIconsContainer1");
+      if (menuIconsContainer1) {
+        menuIconsContainer1.addEventListener("click", function (e) {
+          window.location.href = "./new-requests.html";
+        });
+      }
+      </script>
+  </body>
+</html>

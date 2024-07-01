@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./loan-requests.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair Display:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=SF Pro Text:wght@400;500&display=swap"
+    />
+  </head>
+  <body>
+    <div class="loan-requests2">
+      <header class="left-panel-parent">
+        <div class="left-panel">
+          <div class="rectangle-parent5">
+            <input class="rectangle-input2" type="checkbox" />
+
+            <div class="frame-child6"></div>
+            <div class="frame-child7"></div>
+            <input class="rectangle-input3" type="checkbox" />
+          </div>
+        </div>
+        <a class="bpi4">BPI</a>
+        <div class="top-right-panel">
+          <div class="top-right-content">
+            <div class="housing-loan-wrapper1">
+              <a class="housing-loan6">Housing Loan</a>
+            </div>
+            <div class="administrator-page-frame">
+              <a class="administrator-page2">Administrator Page</a>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+      </header>
+      <main class="content-panel">
+        <div class="rectangle-parent6">
+          <div class="frame-child8"></div>
+          <div class="content-headers" id="contentHeadersContainer">
+            <img
+              class="mask-group-icon13"
+              loading="lazy"
+              alt=""
+              src="./public/mask-group-1@2x.png"
+            />
+
+            <div class="content-titles">
+              <b class="members-information4">Members Information</b>
+            </div>
+          </div>
+          <div class="content-headers1" id="contentHeadersContainer1">
+            <img
+              class="mask-group-icon14"
+              loading="lazy"
+              alt=""
+              src="./public/mask-group-3@2x.png"
+            />
+
+            <b class="loan-requests3">Loan Requests</b>
+          </div>
+        </div>
+        <section class="navigation-panel">
+          <div class="navigation-content">
+            <div class="navigation-items">
+              <h1 class="loan-requests4">Loan Requests</h1>
+              <a class="home4" id="homeText">Home </a>
+            </div>
+            <div class="loan-management-content-parent">
+              <div class="loan-management-content">
+                <div class="rectangle-parent7" id="groupContainer">
+                  <div class="frame-child9"></div>
+                  <div class="loan-management-titles">
+                    <h1 class="loan-requests5">
+                      <p class="loan">Loan</p>
+                      <p class="requests2">Requests</p>
+                    </h1>
+                    <div class="mask-group-wrapper">
+                      <img
+                        class="mask-group-icon15"
+                        loading="lazy"
+                        alt=""
+                        src="./public/mask-group-22@2x.png"
+                      />
+                    </div>
+                  </div>
+                  <div class="access-and-manage">
+                    Access and manage details of the loan application, such as
+                    the loan amount, term, and purpose.
+                  </div>
+                </div>
+                <div class="rectangle-parent8" id="groupContainer1">
+                  <div class="frame-child10"></div>
+                  <div class="existing-loan-parent">
+                    <h1 class="existing-loan">
+                      <p class="existing">Existing</p>
+                      <p class="loan1">Loan</p>
+                    </h1>
+                    <img
+                      class="mask-group-icon16"
+                      loading="lazy"
+                      alt=""
+                      src="./public/mask-group-32@2x.png"
+                    />
+                  </div>
+                  <div class="check-details-of">
+                    Check details of any current loans the borrower has with BPI
+                    or other financial institutions.
+                  </div>
+                </div>
+              </div>
+              <div class="rectangle-parent9" id="groupContainer">
+                <div class="frame-child11"></div>
+                <div class="collateral-content">
+                  <div class="collateral-items">
+                    <h1 class="collateral">Collateral</h1>
+                    <div class="view-and-verify">
+                      View and verify information about the assets offered as
+                      collateral to secure the loan.
+                    </div>
+                  </div>
+                </div>
+                <img
+                  class="mask-group-icon17"
+                  loading="lazy"
+                  alt=""
+                  src="./public/mask-group-41@2x.png"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer4">
+        <div class="all-rights-reserved-container4">
+          <p class="all-rights-reserved4">© 2024 All rights reserved.</p>
+          <p class="made-by-students4">
+            Made by students from Polytechnic University of the Philippines -
+            Manila.
+          </p>
+        </div>
+        <div class="footer-divider"></div>
+      </footer>
+    </div>
+
+    <script>
+      var contentHeadersContainer = document.getElementById(
+        "contentHeadersContainer"
+      );
+      if (contentHeadersContainer) {
+        contentHeadersContainer.addEventListener("click", function (e) {
+          window.location.href = "admin.html";
+        });
+      }
+      
+      var contentHeadersContainer1 = document.getElementById(
+        "contentHeadersContainer1"
+      );
+      if (contentHeadersContainer1) {
+        contentHeadersContainer1.addEventListener("click", function (e) {
+          window.location.href = "./loan-requests.html";
+        });
+      }
+      
+      var homeText = document.getElementById("homeText");
+      if (homeText) {
+        homeText.addEventListener("click", function (e) {
+          window.location.href = "admin.html";
+        });
+      }
+      
+      var groupContainer = document.getElementById("groupContainer");
+      if (groupContainer) {
+        groupContainer.addEventListener("click", function (e) {
+          window.location.href = "./loan-requests-loan-requests.html";
+        });
+      }
+      
+      var groupContainer1 = document.getElementById("groupContainer1");
+      if (groupContainer1) {
+        groupContainer1.addEventListener("click", function (e) {
+          window.location.href = "./loan-requests-existing-loan.html";
+        });
+      }
+      
+      var groupContainer = document.getElementById("groupContainer");
+      if (groupContainer) {
+        groupContainer.addEventListener("click", function (e) {
+          window.location.href = "./loan-requests-collateral.html";
+        });
+      }
+      </script>
+  </body>
+</html>

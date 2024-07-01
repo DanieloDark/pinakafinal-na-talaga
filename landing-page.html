@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./landing-page.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair Display:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=SF Pro Text:wght@400;500&display=swap"
+    />
+  </head>
+  <body>
+    <div class="landing-page">
+      <main class="main1">
+        <section class="hero-background"></section>
+        <header class="header2">
+          <div class="header-background1"></div>
+          <div class="logo2">
+            <img
+              class="mask-group-icon24"
+              loading="lazy"
+              alt=""
+              src="./public/mask-group@2x.png"
+            />
+
+            <a class="bpi8">BPI</a>
+            <div class="slogan-container">
+              <div class="loan-slogan">
+                <a class="housing-loan10">Housing Loan</a>
+              </div>
+              <div class="form-slogan">
+                <a class="application-form4">Application Form</a>
+              </div>
+            </div>
+          </div>
+          <nav class="navigation">
+            <nav class="links-container">
+              <a class="home8" id="homeText">Home</a>
+              <a class="about2" id="aboutText">About</a>
+              <a class="contact-agreement2" id="contactAgreementText"
+                >Contact Agreement</a
+              >
+            </nav>
+          </nav>
+          <div class="call-to-action">
+            <button class="primary-button10" id="primaryButton">
+              <div class="get-started2">LOGIN</div>
+            </button>
+          </div>
+        </header>
+        <section class="content1">
+          <div class="info-container-parent">
+            <div class="info-container">
+              <div class="description">
+                <h1 class="apply-for-a-container">
+                  <span>Apply for a Housing Loan with </span>
+                  <span class="bpi9">BPI</span>
+                </h1>
+                <h1 class="unlock-your-dream">Unlock Your Dream Home Today</h1>
+              </div>
+            </div>
+            <div class="apply-now">
+              <div class="apply-now-child"></div>
+              <div class="button-wrapper-wrapper">
+                <div class="button-wrapper">
+                  <div class="button-elements">
+                    <div class="housing-loan-parent">
+                      <h1 class="housing-loan11">Housing Loan</h1>
+                      <div class="planning-to-buy">
+                        Planning to buy a home? BPI offers flexible and
+                        competitive housing loan options to help you make your
+                        dream a reality.
+                      </div>
+                    </div>
+                  </div>
+                  <button class="primary-button11" id="primaryButton1">
+                    <div class="button-content">
+                      <b class="apply-now1">APPLY NOW</b>
+                    </div>
+                    <img
+                      class="mask-group-icon25"
+                      alt=""
+                      src="./public/mask-group-12@2x.png"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="wrapper-image-5">
+                <img
+                  class="image-5-icon"
+                  loading="lazy"
+                  alt=""
+                  src="./public/image-5@2x.png"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div class="separator1">
+        <img class="separator-child" alt="" src="./public/rectangle-8.svg" />
+      </div>
+      <footer class="footer8">
+        <div class="all-rights-reserved-container8">
+          <p class="all-rights-reserved8">© 2024 All rights reserved.</p>
+          <p class="made-by-students8">
+            Made by students from Polytechnic University of the Philippines -
+            Manila.
+          </p>
+        </div>
+        <div class="footer-child3"></div>
+      </footer>
+    </div>
+
+    <script>
+      var homeText = document.getElementById("homeText");
+      if (homeText) {
+        homeText.addEventListener("click", function (e) {
+          window.location.href = "./landing-page.html";
+        });
+      }
+      
+      var aboutText = document.getElementById("aboutText");
+      if (aboutText) {
+        aboutText.addEventListener("click", function (e) {
+          window.location.href = "./about-us.html";
+        });
+      }
+      
+      var contactAgreementText = document.getElementById("contactAgreementText");
+      if (contactAgreementText) {
+        contactAgreementText.addEventListener("click", function (e) {
+          window.location.href = "./contact-agreement.html";
+        });
+      }
+      
+      var primaryButton = document.getElementById("primaryButton");
+      if (primaryButton) {
+        primaryButton.addEventListener("click", function (e) {
+          window.location.href = "./login-page.html";
+        });
+      }
+      
+      var primaryButton1 = document.getElementById("primaryButton1");
+      if (primaryButton1) {
+        primaryButton1.addEventListener("click", function (e) {
+          window.location.href = "./login-page.html";
+        });
+      }
+      </script>
+  </body>
+</html>

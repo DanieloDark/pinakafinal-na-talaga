@@ -1,0 +1,37 @@
+.chevron-down-icon27,
+.label332 {
+  position: relative;
+  overflow: hidden;
+}
+.label332 {
+  flex: 1;
+  line-height: 24px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.chevron-down-icon27 {
+  height: 24px;
+  width: 24px;
+  flex-shrink: 0;
+}
+.component-255 {
+  width: 100%;
+  position: relative;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gainsboro);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-7xs) var(--padding-mini);
+  gap: var(--gap-base);
+  white-space: nowrap;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--body-body-14-size);
+  color: var(--color-gray-100);
+  font-family: var(--body-body-14);
+}
