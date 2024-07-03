@@ -638,7 +638,7 @@
   align-items: center;
 }
 .username01231 {
-  width: 111px;
+  width: 100%;
   border: 0;
   outline: 0;
   font-size: var(--font-size-base);
@@ -725,7 +725,7 @@
   font-family: var(--body-body-14);
 }
 .password-content {
-  width: 46px;
+  width: 100%;
   border: 0;
   outline: 0;
   background-color: transparent;
