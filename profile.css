@@ -4237,6 +4237,7 @@ width: 100%;
   flex-direction: row;
   gap: var(--gap-50xl-5);
   font-size: var(--font-size-base);
+   overflow-x: hidden;
 }
 .existing-loan-details1 {
   align-self: stretch;
@@ -4624,6 +4625,7 @@ width: 100%;
   gap: var(--gap-5xs);
   font-size: var(--font-size-base);
 }
+
 .borrower-information18,
 .component-294 {
   align-self: stretch;
@@ -5878,6 +5880,7 @@ width: 100%;
   font-size: var(--body-body-14-size);
   color: var(--color-white);
   font-family: var(--font-roboto);
+
 }
 .if-married1 {
   height: 988px;
@@ -5891,8 +5894,9 @@ width: 100%;
   padding: var(--padding-31xl) var(--padding-xs) var(--padding-94xl-9);
   box-sizing: border-box;
   position: relative;
-  gap: 2292.6px;
+  gap: 3000px;
   max-width: 100%;
+  min-height: 100vh;
 }
 .if-married-wrapper,
 .user-panel {
@@ -5958,6 +5962,109 @@ width: 100%;
   line-height: normal;
   letter-spacing: normal;
 }
+
+.business-income2,
+.label783 {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+}
+.business-income2 {
+  height: 24px;
+  z-index: 1;
+}
+.label783 {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-family: var(--font-roboto);
+  font-size: var(--body-body-14-size);
+  background-color: transparent;
+  height: 21px;
+  position: relative;
+  line-height: 150%;
+  color: var(--color-gray-100);
+  text-align: left;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+
+.field690 {
+  align-self: stretch;
+  height: 40px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gainsboro);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs-5) var(--padding-base);
+  font-size: var(--body-body-14-size);
+  color: var(--color-gray-100);
+  font-family: var(--font-roboto);
+}
+
+.business-income4,
+.label903 {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+}
+.business-income4 {
+  height: 24px;
+  z-index: 1;
+}
+.label903 {
+  font-size: 14px;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  height: 21px;
+  position: relative;
+  line-height: 150%;
+  text-align: left;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0;
+}
+.business-income3,
+.field996 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.field996 {
+  align-self: stretch;
+  height: 40px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gainsboro);
+  flex-direction: row;
+  padding: var(--padding-3xs-5) var(--padding-base);
+  z-index: 1;
+  font-size: var(--body-body-14-size);
+  color: var(--color-gray-100);
+  font-family: var(--font-roboto);
+
+}
+.business-income3 {
+  width: 319px;
+  flex-direction: column;
+  padding: 0 0 var(--padding-3xs);
+  gap: var(--gap-5xs);
+}
+
+
 @media screen and (max-width: 1200px) {
   .header8 {
     gap: var(--gap-56xl);
@@ -6181,3 +6288,5 @@ width: 100%;
   color: var(--color-gray-60); 
   margin-bottom: 5px; 
 }
+
+
