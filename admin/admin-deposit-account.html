@@ -51,7 +51,7 @@
             <div class="get-started5">LOGIN</div>
           </div>
         </div>
-        <button class="primary-button11">
+        <button class="primary-button11" id="bpi-button">
           <div class="bpi-housing-loan5">BPI Housing Loan Application Form</div>
         </button>
       </header>
@@ -208,6 +208,15 @@
           window.location.href = "./admin-existing-loan.html";
         });
       }
+
+       // Find the button element
+  const button = document.getElementById('bpi-button');
+
+// Add a click event listener
+button.addEventListener('click', function() {
+  // Navigate to the landing-page.html in the user folder
+  window.location.href = '../user/landing-page.html';
+});
 
       
       </script>
