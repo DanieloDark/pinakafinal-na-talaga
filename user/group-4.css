@@ -1,0 +1,66 @@
+.edit-icon12,
+.frame-child3 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.edit-icon12 {
+  height: 54.05%;
+  width: 30.3%;
+  top: 21.62%;
+  right: 34.85%;
+  bottom: 24.32%;
+  left: 34.85%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  z-index: 1;
+}
+.rectangle-parent {
+  height: 37px;
+  flex: 1;
+  position: relative;
+}
+.delete-icon12,
+.shape,
+.shape-wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.delete-icon12 {
+  height: 64.86%;
+  width: 36.36%;
+  top: 16.22%;
+  right: 31.82%;
+  bottom: 18.92%;
+  left: 31.82%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  z-index: 1;
+}
+.frame-parent8 {
+  height: 37px;
+  flex: 1;
+  position: relative;
+}
+.frame-root {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+  line-height: normal;
+  letter-spacing: normal;
+}
