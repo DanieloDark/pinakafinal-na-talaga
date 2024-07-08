@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./admin-borrower-info.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+    />
+  </head>
+  <body>
+    <div class="admin-borrower-info">
+      <header class="header-group">
+        <div class="header1">
+          <div class="header-background"></div>
+          <div class="logo1">
+            <img
+              class="mask-group-icon1"
+              loading="lazy"
+              alt=""
+              src="./public/mask-group@2x.png"
+            />
+
+            <a class="bpi1">BPI</a>
+            <div class="header-content">
+              <div class="loan-type1">
+                <a class="housing-loan1">Housing Loan</a>
+              </div>
+              <div class="form-type">
+                <a class="application-form1">Administration Page</a>
+              </div>
+            </div>
+          </div>
+          <div class="home-group">
+            <div class="home1">Home</div>
+            <div class="about1">About</div>
+            <div class="contact-agreement1">Contact Agreement</div>
+          </div>
+          <div class="primary-button2">
+            <div class="get-started1">LOGIN</div>
+          </div>
+        </div>
+        <button class="primary-button3">
+          <div class="bpi-housing-loan1">BPI Housing Loan Application Form</div>
+        </button>
+      </header>
+      <main class="content1">
+        <section class="dashboard-content-parent">
+          <div class="dashboard-content">
+            <div class="dashboard-header1">
+              <div class="dashboard-title1">
+                <h1 class="admin-dashboard1">Admin Dashboard</h1>
+              </div>
+              <div class="search1">
+                <div class="search-item"></div>
+                <input class="label1" placeholder="Search" type="text" />
+
+                <img class="search-icon1" alt="" src="./public/search.svg" />
+              </div>
+            </div>
+          </div>
+          <div class="table-column-titles-parent">
+            <div class="table-column-titles">
+              <div class="loan-request3" id="loanRequestContainer">
+                <div class="loan-request-item"></div>
+                <b class="loan-request4">Loan Request</b>
+              </div>
+              <div class="collateral2" id="collateralContainer">
+                <div class="collateral-item"></div>
+                <b class="collateral3">Collateral</b>
+              </div>
+              <div class="borrower-information2">
+                <div class="borrower-information-item"></div>
+                <b class="borrower-information3">Borrower Information</b>
+              </div>
+              <div
+                class="financial-information2"
+                id="financialInformationContainer"
+              >
+                <div class="financial-information-item"></div>
+                <b class="financial-information3">Financial Information</b>
+              </div>
+              <div class="existing-loan1" id="existingLoanContainer">
+                <div class="existing-loan-item"></div>
+                <b class="existing-loans1">Existing Loans</b>
+              </div>
+              <div class="deposit-accounts2" id="depositAccountsContainer">
+                <div class="deposit-accounts-item"></div>
+                <b class="deposit-accounts3">Deposit Accounts</b>
+              </div>
+            </div>
+            <div class="table-header1">
+              <div class="table-body1">
+                <div class="instance-parent">
+                  <div class="cell-wrapper18">
+                    <b class="cell22">Borrower_ID</b>
+                  </div>
+                  <button class="cell-wrapper19">
+                    <b class="cell23">Borr_Name</b>
+                  </button>
+                  <button class="cell-wrapper20">
+                    <b class="cell24">Borr_DOB</b>
+                  </button>
+                  <div class="cell-wrapper21">
+                    <b class="cell25">Borr_Age</b>
+                  </div>
+                  <div class="cell-wrapper22">
+                    <b class="cell26">Borr_Gender</b>
+                  </div>
+                  <div class="cell-wrapper23">
+                    <b class="cell27">Borr_Birth_Place</b>
+                  </div>
+                  <div class="cell-wrapper24">
+                    <b class="cell28">Borr_Nationality</b>
+                  </div>
+                  <div class="cell-wrapper25">
+                    <b class="cell29">Borr_Citizenship</b>
+                  </div>
+                  <div class="cell-wrapper26">
+                    <b class="cell30">Borr_Marital_Status</b>
+                  </div>
+                  <div class="cell-wrapper27">
+                    <b class="cell31">Borr_Mother</b>
+                  </div>
+                  <div class="cell-wrapper28">
+                    <b class="cell32">Borr_Present_Address</b>
+                  </div>
+                </div>
+                <div class="instance-group">
+                  <div class="cell-wrapper29">
+                    <div class="cell33">2001</div>
+                  </div>
+                  <div class="cell-wrapper30">
+                    <div class="cell34">Juan Dela Cruz</div>
+                  </div>
+                  <div class="cell-wrapper31">
+                    <div class="cell35">01/01/1980</div>
+                  </div>
+                  <div class="cell-wrapper32">
+                    <div class="cell36">42</div>
+                  </div>
+                  <div class="cell-wrapper33">
+                    <div class="cell37">Male</div>
+                  </div>
+                  <div class="cell-wrapper34">
+                    <div class="cell38">Manila, Philippines</div>
+                  </div>
+                  <div class="cell-wrapper35">
+                    <div class="cell39">Filipino</div>
+                  </div>
+                  <div class="cell-wrapper36">
+                    <div class="cell40">Filipino</div>
+                  </div>
+                  <div class="cell-wrapper37">
+                    <a class="cell41">Married</a>
+                  </div>
+                  <div class="cell-wrapper38">
+                    <div class="cell42">Maria Santos</div>
+                  </div>
+                  <div class="cell-wrapper39">
+                    <div class="cell43">
+                      1234 Main Street, Makati City, Philippines
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="instance-container">
+                <div class="cell-wrapper40">
+                  <b class="cell44">Borr_Residency</b>
+                </div>
+                <div class="cell-wrapper41">
+                  <div class="cell45">2004</div>
+                </div>
+              </div>
+              <div class="instance-parent1">
+                <div class="cell-wrapper42">
+                  <b class="cell46">Borr_Permanent_Address</b>
+                </div>
+                <div class="cell-wrapper43">
+                  <div class="cell47">
+                    1234 Main Street, Makati City, Philippines
+                  </div>
+                </div>
+              </div>
+              <div class="instance-parent2">
+                <div class="cell-wrapper44">
+                  <b class="cell48">Borr_Previous_Address</b>
+                </div>
+                <div class="cell-wrapper45">
+                  <div class="cell49">
+                    1234 Main Street, Makati City, Philippines
+                  </div>
+                </div>
+              </div>
+              <div class="instance-parent3">
+                <div class="cell-wrapper46">
+                  <b class="cell50">Borr_Home_Ownership</b>
+                </div>
+                <div class="cell-wrapper47">
+                  <div class="cell51">Owned</div>
+                </div>
+              </div>
+              <div class="instance-parent4">
+                <div class="cell-wrapper48">
+                  <b class="cell52">Borr_Rent_Amount</b>
+                </div>
+                <div class="cell-wrapper49">
+                  <div class="cell53">N/A</div>
+                </div>
+              </div>
+              <div class="instance-parent5">
+                <div class="cell-wrapper50">
+                  <b class="cell54">Borr_Children</b>
+                </div>
+                <div class="cell-wrapper51">
+                  <div class="cell55">3</div>
+                </div>
+              </div>
+              <div class="instance-parent6">
+                <div class="cell-wrapper52">
+                  <b class="cell56">Borr_Children_Ages</b>
+                </div>
+                <div class="cell-wrapper53">
+                  <div class="cell57">3, 10, 12</div>
+                </div>
+              </div>
+              <div class="instance-parent7">
+                <div class="cell-wrapper54">
+                  <b class="cell58">Borr_Dependents</b>
+                </div>
+                <div class="cell-wrapper55">
+                  <div class="cell59">3</div>
+                </div>
+              </div>
+              <div class="instance-parent8">
+                <div class="cell-wrapper56">
+                  <b class="cell60">Borr_SSSNo</b>
+                </div>
+                <div class="cell-wrapper57">
+                  <div class="cell61">123-456-789</div>
+                </div>
+              </div>
+              <div class="instance-parent9">
+                <div class="cell-wrapper58">
+                  <b class="cell62">Borr_TIN</b>
+                </div>
+                <div class="cell-wrapper59">
+                  <div class="cell63">123-456-789-000</div>
+                </div>
+              </div>
+              <div class="instance-parent10">
+                <div class="cell-wrapper60">
+                  <b class="cell64">Borr_ResidencePhone</b>
+                </div>
+                <div class="cell-wrapper61">
+                  <div class="cell65">02 1589 234</div>
+                </div>
+              </div>
+              <div class="instance-parent11">
+                <div class="cell-wrapper62">
+                  <b class="cell66">Borr_PhoneNo</b>
+                </div>
+                <div class="cell-wrapper63">
+                  <div class="cell67">0912 345 6789</div>
+                </div>
+              </div>
+              <div class="instance-parent12">
+                <div class="cell-wrapper64">
+                  <b class="cell68">Borr_MailingAddress</b>
+                </div>
+                <div class="cell-wrapper65">
+                  <div class="cell69">Present</div>
+                </div>
+              </div>
+              <div class="instance-parent13">
+                <div class="cell-wrapper66">
+                  <b class="cell70">Borr_Email</b>
+                </div>
+                <div class="cell-wrapper67">
+                  <div class="cell71">juan.delacruz@email.com</div>
+                </div>
+              </div>
+              <div class="instance-parent14">
+                <div class="cell-wrapper68">
+                  <b class="cell72">Spouse_Name</b>
+                </div>
+                <div class="cell-wrapper69">
+                  <div class="cell73">Maria Dela Cruz</div>
+                </div>
+              </div>
+              <div class="instance-parent15">
+                <div class="cell-wrapper70">
+                  <b class="cell74">Sp_DOB</b>
+                </div>
+                <div class="cell-wrapper71">
+                  <div class="cell75">02/02/1985</div>
+                </div>
+              </div>
+              <div class="instance-parent16">
+                <div class="cell-wrapper72">
+                  <b class="cell76">Sp_Age</b>
+                </div>
+                <div class="cell-wrapper73">
+                  <div class="cell77">39</div>
+                </div>
+              </div>
+              <div class="instance-parent17">
+                <div class="cell-wrapper74">
+                  <b class="cell78">Sp_Birth_Place</b>
+                </div>
+                <div class="cell-wrapper75">
+                  <div class="cell79">Manila, Philippines</div>
+                </div>
+              </div>
+              <div class="instance-parent18">
+                <div class="cell-wrapper76">
+                  <b class="cell80">Sp_Nationality</b>
+                </div>
+                <div class="cell-wrapper77">
+                  <div class="cell81">Filipino</div>
+                </div>
+              </div>
+              <div class="instance-parent19">
+                <div class="cell-wrapper78">
+                  <b class="cell82">Sp_Citizenship</b>
+                </div>
+                <div class="cell-wrapper79">
+                  <div class="cell83">Filipino</div>
+                </div>
+              </div>
+              <div class="instance-parent20">
+                <div class="cell-wrapper80">
+                  <b class="cell84">Sp_Mothers_Maiden_Name</b>
+                </div>
+                <div class="cell-wrapper81">
+                  <div class="cell85">Maria Santos</div>
+                </div>
+              </div>
+              <div class="instance-parent21">
+                <div class="cell-wrapper82">
+                  <b class="cell86">Sp_SSSNo</b>
+                </div>
+                <div class="cell-wrapper83">
+                  <div class="cell87">145-234-562</div>
+                </div>
+              </div>
+              <div class="instance-parent22">
+                <div class="cell-wrapper84">
+                  <b class="cell88">Sp_TIN</b>
+                </div>
+                <div class="cell-wrapper85">
+                  <div class="cell89">111-222-333-444</div>
+                </div>
+              </div>
+              <div class="instance-parent23">
+                <div class="cell-wrapper86">
+                  <b class="cell90">Sp_Residence_Phone</b>
+                </div>
+                <div class="cell-wrapper87">
+                  <div class="cell91">02 9229 420</div>
+                </div>
+              </div>
+              <div class="instance-parent24">
+                <div class="cell-wrapper88">
+                  <b class="cell92">Sp_MobilePhone</b>
+                </div>
+                <div class="cell-wrapper89">
+                  <div class="cell93">0989 1284 730</div>
+                </div>
+              </div>
+              <div class="instance-parent25">
+                <div class="cell-wrapper90">
+                  <b class="cell94">Sp_Email</b>
+                </div>
+                <div class="cell-wrapper91">
+                  <div class="cell95">maria.delacruz@email.com</div>
+                </div>
+              </div>
+              <div class="action-row">
+                <div class="cell-wrapper92">
+                  <b class="cell96">Actions</b>
+                </div>
+                <div class="actions2">
+                  <div class="edit1">
+                    <div class="edit-icon2"></div>
+                    <img class="edit-icon3" loading="lazy" alt="" />
+                  </div>
+                  <div class="delete1">
+                    <div class="delete-icon-wrapper">
+                      <div class="delete-icon1"></div>
+                    </div>
+                    <img class="delete-icon2" loading="lazy" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer1">
+        <div class="all-rights-reserved-container1">
+          <p class="all-rights-reserved1">© 2024 All rights reserved.</p>
+          <p class="made-by-students1">
+            Made by students from Polytechnic University of the Philippines -
+            Manila.
+          </p>
+        </div>
+        <div class="footer-background"></div>
+      </footer>
+    </div>
+
+    <script>
+      var loanRequestContainer = document.getElementById("loanRequestContainer");
+      if (loanRequestContainer) {
+        loanRequestContainer.addEventListener("click", function (e) {
+          window.location.href = "./admin-loan-request.html";
+        });
+      }
+      
+      var collateralContainer = document.getElementById("collateralContainer");
+      if (collateralContainer) {
+        collateralContainer.addEventListener("click", function (e) {
+          window.location.href = "./admin-collateral.html";
+        });
+      }
+      
+      var financialInformationContainer = document.getElementById(
+        "financialInformationContainer"
+      );
+      if (financialInformationContainer) {
+        financialInformationContainer.addEventListener("click", function (e) {
+          window.location.href = "./admin-financial-info.html";
+        });
+      }
+      
+      var existingLoanContainer = document.getElementById("existingLoanContainer");
+      if (existingLoanContainer) {
+        existingLoanContainer.addEventListener("click", function (e) {
+          window.location.href = "./admin-existing-loan.html";
+        });
+      }
+      
+      var depositAccountsContainer = document.getElementById(
+        "depositAccountsContainer"
+      );
+      if (depositAccountsContainer) {
+        depositAccountsContainer.addEventListener("click", function (e) {
+          window.location.href = "./admin-deposit-account.html";
+        });
+      }
+      </script>
+  </body>
+</html>
