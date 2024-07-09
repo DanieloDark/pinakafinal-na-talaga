@@ -287,7 +287,6 @@
   padding: var(--padding-mini) var(--padding-lg) var(--padding-base)
     var(--padding-21xl);
   gap: var(--gap-xs);
-  cursor: pointer;
   z-index: 1;
 }
 .rectangle-parent21 {

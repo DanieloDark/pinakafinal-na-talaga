@@ -120,27 +120,27 @@
                       <div class="property-use-dropdown">
                         <div class="component-2112">
                           <div class="component-14-parent">
-                            <div class="component-142">
-                              <div class="icons28">
-                                  <input class="icons29" type="radio" name="property-use" value="occupancy">
-                                  <div class="option-114">Occupancy</div>
+                              <div class="component-142">
+                                  <div class="icons28">
+                                      <input class="icons29" type="radio" name="property-use" value="occupancy" id="occupancy">
+                                      <div class="option-114">Occupancy</div>
+                                  </div>
+                                  <div class="icons30">
+                                      <input id="owner" class="icons31" type="checkbox" disabled>
+                                      <div class="option-115">Owner</div>
+                                  </div>
+                                  <div class="icons32">
+                                      <input id="others" class="icons33" type="checkbox" disabled>
+                                      <div class="option-116">Others:</div>
+                                  </div>
                               </div>
-                              <div class="icons30">
-                                  <input id="owner" class="icons31" type="checkbox">
-                                  <div class="option-115">Owner</div>
-                              </div>
-                              <div class="icons32">
-                                  <input id="others" class="icons33" type="checkbox">
-                                  <div class="option-116">Others:</div>
-                              </div>
-                          </div>
-                            
                           </div>
                           <div class="icons34">
-                            <input class="icons35" type="radio" name="property-use" value="Investment">
-                            <div class="option-117">Investment</div>
+                              <input class="icons35" type="radio" name="property-use" value="Investment" id="investment">
+                              <div class="option-117">Investment</div>
                           </div>
-                        </div>
+                      </div>
+                      
                         <div class="component-202">
                           <div class="component-143">
                             <div class="icons36">
@@ -343,21 +343,47 @@
     });
 });
 
-
+    //Javascript for property use
+document.addEventListener('DOMContentLoaded', () => {
+    const occupancyRadio = document.getElementById('occupancy');
+    const investmentRadio = document.getElementById('investment');
     const ownerCheckbox = document.getElementById('owner');
-        const othersCheckbox = document.getElementById('others');
-        
-        ownerCheckbox.addEventListener('change', () => {
-            if (ownerCheckbox.checked) {
-                othersCheckbox.checked = false;
-            }
-        });
-        
-        othersCheckbox.addEventListener('change', () => {
-            if (othersCheckbox.checked) {
-                ownerCheckbox.checked = false;
-            }
-        });
+    const othersCheckbox = document.getElementById('others');
+
+    function toggleCheckboxes(enable) {
+        ownerCheckbox.disabled = !enable;
+        othersCheckbox.disabled = !enable;
+        if (!enable) {
+            ownerCheckbox.checked = false;
+            othersCheckbox.checked = false;
+        }
+    }
+
+    occupancyRadio.addEventListener('change', () => {
+        if (occupancyRadio.checked) {
+            toggleCheckboxes(true);
+        }
+    });
+
+    investmentRadio.addEventListener('change', () => {
+        if (investmentRadio.checked) {
+            toggleCheckboxes(false);
+        }
+    });
+
+    ownerCheckbox.addEventListener('change', () => {
+        if (ownerCheckbox.checked) {
+            othersCheckbox.checked = false;
+        }
+    });
+
+    othersCheckbox.addEventListener('change', () => {
+        if (othersCheckbox.checked) {
+            ownerCheckbox.checked = false;
+        }
+    });
+});
+
 
       </script></body>
   </html>
