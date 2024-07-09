@@ -2,216 +2,102 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
-
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./admin-existing-loan.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800;900&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
-    />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="admin-existing-loan.css" />
   </head>
   <body>
     <div class="admin-existing-loan">
-      <header class="frame-header">
-        <div class="header3">
-          <div class="header-item"></div>
-          <div class="logo3">
-            <img
-              class="mask-group-icon3"
-              loading="lazy"
-              alt=""
-              src="./public/mask-group@2x.png"
-            />
-
-            <a class="bpi3">BPI</a>
-            <div class="frame-parent">
-              <div class="housing-loan-wrapper">
-                <a class="housing-loan3">Housing Loan</a>
-              </div>
-              <div class="application-form-wrapper">
-                <a class="application-form3">Administration Page</a>
+      <div class="div">
+        <footer class="footer">
+          <p class="element-all-rights">
+            © 2024 All rights reserved. <br />Made by students from Polytechnic University of the Philippines - Manila.
+          </p>
+        </footer>
+        <div class="overlap">
+          <header class="header">
+            <div class="logo">
+              <div class="overlap-group">
+                <img class="mask-group" src="img/mask-group.png" />
+                <div class="text-wrapper">BPI</div>
+                <div class="text-wrapper-2">Housing Loan</div>
+                <div class="application-form">Administration Page</div>
               </div>
             </div>
-          </div>
-          <div class="home-parent1">
-            <div class="home3">Home</div>
-            <div class="about3">About</div>
-            <div class="contact-agreement3">Contact Agreement</div>
-          </div>
-          <div class="primary-button6">
-            <div class="get-started3">LOGIN</div>
-          </div>
+          </header>
+          <div class="element-primary-button"><p class="p">BPI Housing Loan Application Form</p></div>
         </div>
-        <button class="primary-button7"  id="bpi-button">
-          <div class="bpi-housing-loan3">BPI Housing Loan Application Form</div>
-        </button>
-      </header>
-      <main class="admin-existing-loan-inner">
-        <section class="frame-group">
-          <div class="frame-wrapper">
-            <div class="frame-container">
-              <div class="admin-dashboard-wrapper">
-                <h1 class="admin-dashboard3">Admin Dashboard</h1>
-              </div>
-              <div class="search3">
-                <div class="rectangle-div"></div>
-                <input class="label3" placeholder="Search" type="text" />
-
-                <img class="search-icon3" alt="" src="./public/search.svg" />
-              </div>
+        <div class="text-wrapper-3">Admin Dashboard</div>
+        <div class="overlap-2">
+          <div class="frame">
+            <div class="loan-request" id="loanRequestContainer">
+              <div class="div-wrapper"><div class="text-wrapper-4">Loan Request</div></div>
+            </div>
+            <div class="collateral" id="collateralContainer">
+              <div class="overlap-3"><div class="text-wrapper-5">Collateral</div></div>
+            </div>
+            <div class="borrower-information"   id="borrowerInformationContainer">
+              <div class="overlap-4"><div class="text-wrapper-6">Borrower Information</div></div>
+            </div>
+            <div class="financial"   id="financialInformationContainer">
+              <div class="overlap-5"><div class="text-wrapper-7">Financial Information</div></div>
+            </div>
+            <div class="existing-loan">
+              <div class="overlap-6"><div class="text-wrapper-8">Existing Loans</div></div>
+            </div>
+            <div class="deposit-accounts" id="depositAccountsContainer">
+              <div class="overlap-7"><div class="text-wrapper-9">Deposit Accounts</div></div>
             </div>
           </div>
-          <div class="frame-parent1">
-            <div class="loan-request-parent">
-              <div class="loan-request7" id="loanRequestContainer">
-                <div class="loan-request-child1"></div>
-                <b class="loan-request8">Loan Request</b>
+          <div class="existing-loan-wrapper">
+            <div class="existing-loan-2">
+              <div class="existing-loan-ID">
+                <div class="cell-wrapper"><div class="cell">Existing_Loan_ID</div></div>
+                <div class="frame-2"><div class="cell-2">1A</div></div>
               </div>
-              <div class="collateral6" id="collateralContainer">
-                <div class="collateral-inner"></div>
-                <b class="collateral7">Collateral</b>
+              <div class="borrower-ID">
+                <div class="cell-wrapper"><div class="cell">Borrower_ID</div></div>
+                <div class="frame-2"><div class="cell-2">2001</div></div>
               </div>
-              <div
-                class="borrower-information6"
-                id="borrowerInformationContainer"
-              >
-                <div class="borrower-information-child1"></div>
-                <b class="borrower-information7">Borrower Information</b>
-              </div>
-              <div
-                class="financial-information6"
-                id="financialInformationContainer"
-              >
-                <div class="financial-information-child1"></div>
-                <b class="financial-information7">Financial Information</b>
-              </div>
-              <div class="existing-loan3">
-                <div class="existing-loan-child1"></div>
-                <b class="existing-loans3">Existing Loans</b>
-              </div>
-              <div class="deposit-accounts6" id="depositAccountsContainer">
-                <div class="deposit-accounts-child1"></div>
-                <b class="deposit-accounts7">Deposit Accounts</b>
-              </div>
-            </div>
-            <div class="frame-parent2">
-              <div class="frame-parent3">
-                <div class="instance-parent26">
-                  <button class="cell-wrapper132">
-                    <b class="cell136">Existing_Loan_ID</b>
-                  </button>
-                  <button class="cell-wrapper133">
-                    <b class="cell137">Borrower_ID</b>
-                  </button>
-                  <button class="cell-wrapper134">
-                    <b class="cell138">Name_of_Creditor</b>
-                  </button>
-                </div>
-                <div class="instance-parent27">
-                  <div class="cell-wrapper135">
-                    <div class="cell139">1A</div>
-                  </div>
-                  <div class="cell-wrapper136">
-                    <div class="cell140">2001</div>
-                  </div>
-                  <div class="cell-wrapper137">
-                    <div class="cell141">BPI</div>
-                  </div>
-                </div>
+              <div class="name-of-creditor">
+                <div class="cell-wrapper"><div class="cell">Name_of_Creditor</div></div>
+                <div class="frame-2"><div class="cell-2">BPI</div></div>
               </div>
               <div class="type-of-loan">
-                <button class="cell-wrapper138">
-                  <b class="cell142">Type_of_Loan</b>
-                </button>
-                <div class="cell-wrapper139">
-                  <div class="cell143">Personal Loan</div>
-                </div>
-                <div class="cell-wrapper140">
-                  <div class="cell144">Home Improvement Loan</div>
-                </div>
-                <div class="cell-wrapper141">
-                  <div class="cell145">Business Loan</div>
-                </div>
-                <div class="cell-wrapper142">
-                  <div class="cell146">Personal Loan</div>
-                </div>
-                <div class="cell-wrapper143">
-                  <div class="cell147">Business Loan</div>
-                </div>
-                <div class="cell-wrapper144">
-                  <div class="cell148">Business Loan</div>
-                </div>
+                <div class="cell-wrapper"><div class="cell">Type_of_Loan</div></div>
+                <div class="frame-2"><div class="cell-2">Personal Loan</div></div>
               </div>
-              <div class="frame-parent4">
-                <div class="instance-parent28">
-                  <div class="cell-wrapper145">
-                    <b class="cell149">Maturity_Date</b>
-                  </div>
-                  <div class="cell-wrapper146">
-                    <b class="cell150">Original_Loan_Amount</b>
-                  </div>
-                  <div class="cell-wrapper147">
-                    <b class="cell151">Outstanding_Balance</b>
-                  </div>
-                  <div class="cell-wrapper148">
-                    <b class="cell152">Monthly_Amortization</b>
-                  </div>
-                </div>
-                <div class="instance-parent29">
-                  <div class="cell-wrapper149">
-                    <div class="cell153">12/31/2025</div>
-                  </div>
-                  <div class="cell-wrapper150">
-                    <div class="cell154">500000</div>
-                  </div>
-                  <div class="cell-wrapper151">
-                    <div class="cell155">100000</div>
-                  </div>
-                  <div class="cell-wrapper152">
-                    <div class="cell156">5000</div>
-                  </div>
-                </div>
+              <div class="maturity-date">
+                <div class="cell-wrapper"><div class="cell">Maturity_Date</div></div>
+                <div class="frame-2"><div class="cell-2">12/31/2025</div></div>
               </div>
-              <div class="instance-parent30">
-                <div class="cell-wrapper153">
-                  <b class="cell157">Actions</b>
-                </div>
-                <div class="actions4">
-                  <div class="edit3">
-                    <div class="edit-child"></div>
-                    <img class="edit-icon6" loading="lazy" alt="" />
-                  </div>
-                  <div class="delete3">
-                    <div class="delete-child">
-                      <div class="frame-item"></div>
-                    </div>
-                    <img class="delete-icon5" loading="lazy" alt="" />
-                  </div>
+              <div class="original-loan-amount">
+                <div class="cell-wrapper"><div class="cell">Original_Loan_Amount</div></div>
+                <div class="frame-2"><div class="cell-2">500000</div></div>
+              </div>
+              <div class="outstanding-balance">
+                <div class="cell-wrapper"><div class="cell">Outstanding_Balance</div></div>
+                <div class="frame-2"><div class="cell-2">100000</div></div>
+              </div>
+              <div class="monthly-amortization">
+                <div class="cell-wrapper"><div class="cell">Monthly_Amortization</div></div>
+                <div class="frame-2"><div class="cell-2">5000</div></div>
+              </div>
+              <div class="actions">
+                <div class="cell-wrapper"><div class="cell">Actions</div></div>
+                <div class="actions-2">
+                  <div class="edit"><img class="img" src="img/edit-1.png" /></div>
+                  <div class="delete"><img class="delete-2" src="img/delete-2.png" /></div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-      </main>
-      <footer class="footer3">
-        <div class="all-rights-reserved-container3">
-          <p class="all-rights-reserved3">© 2024 All rights reserved.</p>
-          <p class="made-by-students3">
-            Made by students from Polytechnic University of the Philippines -
-            Manila.
-          </p>
         </div>
-        <div class="footer-item"></div>
-      </footer>
+        <div class="search">
+          <div class="overlap-8">
+            <input class="label" placeholder="Search" type="text" /> <img class="search-2" src="img/search-1.svg" />
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
@@ -219,13 +105,6 @@
       if (loanRequestContainer) {
         loanRequestContainer.addEventListener("click", function (e) {
           window.location.href = "./admin-loan-request.html";
-        });
-      }
-      
-      var collateralContainer = document.getElementById("collateralContainer");
-      if (collateralContainer) {
-        collateralContainer.addEventListener("click", function (e) {
-          window.location.href = "./admin-collateral.html";
         });
       }
       
@@ -247,6 +126,13 @@
         });
       }
       
+      var existingLoanContainer = document.getElementById("collateral");
+      if (existingLoanContainer) {
+        existingLoanContainer.addEventListener("click", function (e) {
+          window.location.href = "./admin-collateral.html";
+        });
+      }
+      
       var depositAccountsContainer = document.getElementById(
         "depositAccountsContainer"
       );
@@ -256,16 +142,17 @@
         });
       }
 
-  // Find the button element
-  const button = document.getElementById('bpi-button');
+ // Find the button element
+ const button = document.getElementById('bpi-button');
 
-  // Add a click event listener
-  button.addEventListener('click', function() {
-    // Navigate to the landing-page.html in the user folder
-    window.location.href = '../user/landing-page.html';
-  });
+// Add a click event listener
+button.addEventListener('click', function() {
+  // Navigate to the landing-page.html in the user folder
+  window.location.href = '../user/landing-page.html';
+});
 
 
       </script>
+
   </body>
 </html>

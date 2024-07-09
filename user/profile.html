@@ -971,53 +971,7 @@
                       <input class="label679" placeholder="Enter Bank and Branch Address" type="text" />
                     </div>
                   </div>
-                </div> 
-                
-                    <!--Form Instructions-->
-                <div class="form-instructions">
-                  <div class="instructions">
-                    <h1 class="bpi-application-form">BPI Application Form Instructions</h1>
-                    <h3 class="welcome-to-the-container">
-                      <p class="welcome-to-the">
-                        Thank you for using the BPI Application Form. Before saving your information, please read the following instructions carefully.
-                      </p>
-                      <ol class="required-fields-fields-marked">
-                        <li class="required-fields-fields-marked1">
-                          <b class="required-fields">Required Fields</b>
-                          <span>: Fields marked with an asterisk (*) are mandatory. Ensure that you fill out all required fields to successfully submit your application.</span>
-                        </li>
-                        <li class="accuracy-of-information-ensur">
-                          <b class="accuracy-of-information">Accuracy of Information:</b>
-                          <span class="ensure-that-all">Ensure that all the details you provide are true and accurate. Providing false information may result in the disqualification of your application.</span>
-                        </li>
-                        <li class="eligibility-requirements-veri">
-                          <b class="eligibility-requirements">Eligibility Requirements</b>
-                          <span class="verify-that-you">: Verify that you meet all the eligibility criteria before submitting your application. Accurate and truthful details are essential to determine your eligibility.</span>
-                        </li>
-                        <li>
-                          <b class="review-before-submission">Review Before Submission:</b>
-                          <span class="double-check-all-the">Double-check all the information before submitting the form. Incomplete or inaccurate submissions may delay the processing of your application.</span>
-                        </li>
-                      </ol>
-                    </h3>
-                    <div class="confirmation-parent">
-                      <h3 class="confirmation">Confirmation:</h3>
-                      <div class="confirmation-options">
-                        <div class="confirmation1">
-                          <div class="icons90">
-                            <input id="checkbox1" class="icons91" type="checkbox" />
-                            <div class="option-920">I have read and understood the information provided above.</div>
-                          </div>
-                          <div class="icons92">
-                            <input id="checkbox2" class="icons93" type="checkbox" />
-                            <div class="option-921">I confirm that all the details I have provided are true and accurate.</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              
+                </div>              
               </div>
             </div>
             <div class="mailing-address10">*Mailing Address</div>
@@ -1085,20 +1039,15 @@
           window.location.href = "./newreq.html";
         });
       }
-      
-      var groupContainer = document.getElementById("groupContainer");
-  if (groupContainer) {
-    groupContainer.addEventListener("click", function (e) {
-      var checkbox1 = document.getElementById('checkbox1').checked;
-      var checkbox2 = document.getElementById('checkbox2').checked;
 
-      if (!checkbox1 || !checkbox2) {
-        alert('Please ensure to check both confirmation boxes before saving.');
-      } else {
-        window.location.href = "./saved-profile.html";
+      var userRequestsContainer = document.getElementById("groupContainer");
+      if (userRequestsContainer) {
+        userRequestsContainer.addEventListener("click", function (e) {
+          window.location.href = "./saved-profile.html";
+        });
       }
-    });
-  }
+      
+ 
       </script>
   </body>
 </html>
