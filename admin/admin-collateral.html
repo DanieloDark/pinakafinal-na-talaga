@@ -2,184 +2,107 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
-
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./admin-collateral.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800;900&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
-    />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="admin-collateral.css" />
   </head>
   <body>
     <div class="admin-collateral">
-      <header class="header-parent1">
-        <div class="header4">
-          <div class="header-inner"></div>
-          <div class="logo4">
-            <img
-              class="mask-group-icon4"
-              loading="lazy"
-              alt=""
-              src="./public/mask-group@2x.png"
-            />
-
-            <a class="bpi4">BPI</a>
-            <div class="frame-parent5">
-              <div class="housing-loan-container">
-                <a class="housing-loan4">Housing Loan</a>
-              </div>
-              <div class="application-form-container">
-                <a class="application-form4">Administration Page</a>
-              </div>
-            </div>
-          </div>
-          <div class="home-parent2">
-            <div class="home4">Home</div>
-            <div class="about4">About</div>
-            <div class="contact-agreement4">Contact Agreement</div>
-          </div>
-          <div class="primary-button8">
-            <div class="get-started4">LOGIN</div>
-          </div>
-        </div>
-        <button class="primary-button9" id="bpi-button">
-          <div class="bpi-housing-loan4">BPI Housing Loan Application Form</div>
-        </button>
-      </header>
-      <main class="admin-collateral-inner">
-        <section class="frame-section">
-          <div class="frame-wrapper1">
-            <div class="frame-parent6">
-              <div class="admin-dashboard-container">
-                <h1 class="admin-dashboard4">Admin Dashboard</h1>
-              </div>
-              <div class="search4">
-                <div class="search-child1"></div>
-                <input class="label4" placeholder="Search" type="text" />
-
-                <img class="search-icon4" alt="" src="./public/search.svg" />
-              </div>
-            </div>
-          </div>
-          <div class="table-header-parent">
-            <div class="table-header3">
-              <div class="loan-request9" id="loanRequestContainer">
-                <div class="loan-request-child2"></div>
-                <b class="loan-request10">Loan Request</b>
-              </div>
-              <div class="collateral8">
-                <div class="collateral-child1"></div>
-                <b class="collateral9">Collateral</b>
-              </div>
-              <div
-                class="borrower-information8"
-                id="borrowerInformationContainer"
-              >
-                <div class="borrower-information-child2"></div>
-                <b class="borrower-information9">Borrower Information</b>
-              </div>
-              <div
-                class="financial-information8"
-                id="financialInformationContainer"
-              >
-                <div class="financial-information-child2"></div>
-                <b class="financial-information9">Financial Information</b>
-              </div>
-              <div class="existing-loan4" id="existingLoanContainer">
-                <div class="existing-loan-child2"></div>
-                <b class="existing-loans4">Existing Loans</b>
-              </div>
-              <div class="deposit-accounts8" id="depositAccountsContainer">
-                <div class="deposit-accounts-child2"></div>
-                <b class="deposit-accounts9">Deposit Accounts</b>
-              </div>
-            </div>
-            <div class="table-body3">
-              <div class="instance-parent31">
-                <button class="cell-wrapper154">
-                  <b class="cell158">TCT_CCT_No</b>
-                </button>
-                <button class="cell-wrapper155">
-                  <b class="cell159">Col_Address</b>
-                </button>
-                <button class="cell-wrapper156">
-                  <b class="cell160">Col_RegName</b>
-                </button>
-                <div class="cell-wrapper157">
-                  <b class="cell161">Col_Contact_Person</b>
-                </div>
-                <div class="cell-wrapper158">
-                  <b class="cell162">Col_MobileNo</b>
-                </div>
-                <button class="cell-wrapper159">
-                  <b class="cell163">Col_TelephoneNo</b>
-                </button>
-                <button class="cell-wrapper160">
-                  <b class="cell164">Actions</b>
-                </button>
-              </div>
-              <div class="instance-parent32">
-                <div class="cell-wrapper161">
-                  <div class="cell165">1234567890</div>
-                </div>
-                <div class="cell-wrapper162">
-                  <div class="cell166">
-                    123 Main St Quezon City Metro Manila
-                  </div>
-                </div>
-                <div class="cell-wrapper163">
-                  <div class="cell167">Juan Dela Cruz</div>
-                </div>
-                <div class="cell-wrapper164">
-                  <div class="cell168">Maria Dela Cruz</div>
-                </div>
-                <div class="cell-wrapper165">
-                  <div class="cell169">0912 345 6789</div>
-                </div>
-                <div class="cell-wrapper166">
-                  <div class="cell170">02 1589 234</div>
-                </div>
-                <div class="actions5" style="margin-right: -40px;">
-                  <div class="edit4" ></div>
-                      <button class="edit" id="editButton">
-                          <div class="edit-icon"></div>
-                          <img class="edit-icon1" loading="lazy" alt="" src="./public/Edit.png" />
-                      </button>
-                      <button class="delete" id="deleteButton" style="margin-left: 50px;"> <!-- Adjust margin-left as needed -->
-                          <div class="delete-inner"></div>
-                          <img class="delete-icon" loading="lazy" alt="" src="./public/delete.png" />
-                      </button>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer class="footer4">
-        <div class="all-rights-reserved-container4">
-          <p class="all-rights-reserved4">© 2024 All rights reserved.</p>
-          <p class="made-by-students4">
-            Made by students from Polytechnic University of the Philippines -
-            Manila.
+      <div class="div">
+        <footer class="footer">
+          <p class="element-all-rights">
+            © 2024 All rights reserved. <br />Made by students from Polytechnic University of the Philippines - Manila.
           </p>
+        </footer>
+        <div class="overlap">
+          <header class="header">
+            <div class="logo">
+              <div class="overlap-group">
+                <img class="mask-group" src="img/mask-group.png" />
+                <div class="text-wrapper">BPI</div>
+                <div class="text-wrapper-2">Housing Loan</div>
+                <div class="application-form">Administration Page</div>
+              </div>
+            </div>
+          </header>
+         <button class="element-primary-button" id="bpi-button">
+            <div class="p">BPI Housing Loan Application Form</div>
+          </button>
         </div>
-        <div class="footer-inner"></div>
-      </footer>
+        <div class="text-wrapper-3">Admin Dashboard</div>
+        <div class="overlap-2">
+          <div class="frame">
+            <div class="loan-request"id="loanRequestContainer">
+              <div class="div-wrapper"><div class="text-wrapper-4">Loan Request</div></div>
+            </div>
+            <div class="collateral" id="collateralContainer">
+              <div class="overlap-3"><div class="text-wrapper-5">Collateral</div></div>
+            </div>
+            <div class="borrower-information"  id="borrowerInformationContainer"> 
+              <div class="overlap-4"><div class="text-wrapper-6">Borrower Information</div></div>
+            </div>
+            <div class="financial"  id="financialInformationContainer">
+              <div class="overlap-5"><div class="text-wrapper-7">Financial Information</div></div>
+            </div>
+            <div class="existing-loan" id="existingLoanContainer">
+              <div class="overlap-6"><div class="text-wrapper-8">Existing Loans</div></div>
+            </div>
+            <div class="deposit-accounts" id="depositAccountsContainer">
+              <div class="overlap-7"><div class="text-wrapper-9">Deposit Accounts</div></div>
+            </div>
+          </div>
+          <div class="collateral-wrapper">
+            <div class="table-wrapper">
+              <div class="table">
+                <div class="TCT-CCT-no">
+                  <div class="cell-wrapper"><div class="cell">TCT_CCT_No</div></div>
+                  <div class="frame-2"><div class="cell-2">1234567890</div></div>
+                </div>
+                <div class="col-address">
+                  <div class="cell-wrapper"><div class="cell">Col_Address</div></div>
+                  <div class="frame-2"><p class="cell-2">123 Main St Quezon City Metro Manila</p></div>
+                </div>
+                <div class="div-2">
+                  <div class="cell-wrapper"><div class="cell">Col_RegName</div></div>
+                  <div class="frame-2"><div class="cell-2">Juan Dela Cruz</div></div>
+                </div>
+                <div class="div-2">
+                  <div class="cell-wrapper"><div class="cell">Col_Contact_Person</div></div>
+                  <div class="frame-2"><div class="cell-2">Maria Dela Cruz</div></div>
+                </div>
+                <div class="col-mobileno">
+                  <div class="cell-wrapper"><div class="cell">Col_MobileNo</div></div>
+                  <div class="frame-2"><div class="cell-2">0912 345 6789</div></div>
+                </div>
+                <div class="col-telephoneno">
+                  <div class="cell-wrapper"><div class="cell">Col_TelephoneNo</div></div>
+                  <div class="frame-2"><div class="cell-2">02 1589 234</div></div>
+                </div>
+                <div class="actions">
+                  <div class="cell-wrapper"><div class="cell">Actions</div></div>
+                  <div class="actions-2">
+                    <button class="edit" id="editButton">
+                      <img class="img" src="./public/Edit.png" /></button>
+                    <button class="delete">
+                      <img class="delete-2" src="./public/delete.png" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="search">
+          <div class="overlap-8">
+            <input class="label" placeholder="Search" type="text" /> <img class="search-2" src="img/search-1.svg" />
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
-      var loanRequestContainer = document.getElementById("loanRequestContainer");
-      if (loanRequestContainer) {
-        loanRequestContainer.addEventListener("click", function (e) {
+      var collateralContainer = document.getElementById("loanRequestContainer");
+      if (collateralContainer) {
+        collateralContainer.addEventListener("click", function (e) {
           window.location.href = "./admin-loan-request.html";
         });
       }
@@ -218,16 +141,15 @@
         });
       }
 
- // Find the button element
- const button = document.getElementById('bpi-button');
+      // Find the button element
+  const button = document.getElementById('bpi-button');
 
 // Add a click event listener
 button.addEventListener('click', function() {
   // Navigate to the landing-page.html in the user folder
   window.location.href = '../user/landing-page.html';
 });
-
-
-      </script>
+    
+    </script>
   </body>
 </html>

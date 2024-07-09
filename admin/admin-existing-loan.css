@@ -1,9 +1,11 @@
 .admin-existing-loan {
-  background-color: #fafafa;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   width: 100%;
+  background-color: var(--color-gray-100);
+  overflow: hidden;
+  flex-direction: column;
+  gap: var(--gap-19xl-5);
+  line-height: normal;
+  letter-spacing: normal;
 }
 
 .admin-existing-loan .div {
@@ -15,17 +17,17 @@
 
 .admin-existing-loan .footer {
   position: absolute;
-  width: 1440px;
+  width: 2640px;
   height: 85px;
   top: 939px;
   left: 0;
   background-color: transparent;
   background: linear-gradient(
-    8.16deg,
-    #ed3d43,
-    #a72025 23.51%,
-    #86171b 54.18%,
-    #3d1112
+    180deg,
+    rgb(237.1, 60.99, 66.91) 0%,
+    rgb(166.7, 32.46, 36.98) 23.51%,
+    rgb(133.5, 23.22, 26.92) 54.18%,
+    rgb(61, 16.47, 17.96) 100%
   );
 }
 
@@ -52,17 +54,17 @@
 
 .admin-existing-loan .header {
   position: absolute;
-  width: 1440px;
+  width: 2640px;
   height: 92px;
   top: 0;
   left: 0;
   background-color: transparent;
   background: linear-gradient(
-    8.16deg,
-    #ed3d43,
-    #a72025 23.51%,
-    #86171b 54.18%,
-    #3d1112
+    180deg,
+    rgb(237.1, 60.99, 66.91) 0%,
+    rgb(166.7, 32.46, 36.98) 23.51%,
+    rgb(133.5, 23.22, 26.92) 54.18%,
+    rgb(61, 16.47, 17.96) 100%
   );
 }
 
@@ -131,6 +133,7 @@
 }
 
 .admin-existing-loan .element-primary-button {
+  cursor: pointer;
   display: flex;
   width: 254px;
   height: 40px;
@@ -183,7 +186,6 @@
 .admin-existing-loan .frame {
   display: inline-flex;
   align-items: center;
-  gap: 2px;
   position: absolute;
   top: 0;
   left: 0;
@@ -193,6 +195,7 @@
   position: relative;
   width: 185px;
   height: 39px;
+  cursor: pointer;
 }
 
 .admin-existing-loan .div-wrapper {
@@ -223,6 +226,7 @@
   position: relative;
   width: 199px;
   height: 39px;
+  cursor: pointer;
 }
 
 .admin-existing-loan .overlap-3 {
@@ -253,6 +257,7 @@
   position: relative;
   width: 234px;
   height: 39px;
+  cursor: pointer;
 }
 
 .admin-existing-loan .overlap-4 {
@@ -283,6 +288,7 @@
   position: relative;
   width: 229px;
   height: 39px;
+  cursor: pointer;
 }
 
 .admin-existing-loan .overlap-5 {
@@ -344,6 +350,7 @@
   width: 224px;
   height: 39px;
   margin-right: -2px;
+  cursor: pointer;
 }
 
 .admin-existing-loan .overlap-7 {
@@ -599,4 +606,15 @@
   height: 25px;
   top: 16px;
   left: 312px;
+}
+
+button {
+  border: none; 
+  background: none; 
+  padding: 0; 
+  cursor: pointer;
+}
+
+button img {
+  display: block; 
 }
