@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+  <body>
+    <div class="profile">
+      <div class="div">
+        <div class="overlap">
+          <div class="frame">
+            <div class="frame-2">
+              <div class="text-wrapper">Profile</div>
+              <img class="mask-group" src="img/mask-group-2.png" />
+            </div>
+            <div class="frame-3">
+              <div class="text-wrapper" id="userRequestsContainer">New Requests</div>
+              <img class="img" src="img/mask-group-3.png" />
+            </div>
+          </div>
+        </div>
+        <div class="overlap-group">
+          <header class="header">
+            <div class="logo">
+              <div class="overlap-group-2">
+                <img class="mask-group-2" src="img/mask-group.png" />
+                <div class="text-wrapper-2">BPI</div>
+                <div class="text-wrapper-3">Housing Loan</div>
+                <div class="text-wrapper-4">Application Form</div>
+              </div>
+            </div>
+            <div class="frame-4">
+              <div class="text-wrapper-5"  id="homeText">Home</div>
+              <div class="text-wrapper-6" id="aboutText">About</div>
+              <div class="text-wrapper-7" id="contactAgreementText">Contact Agreement</div>
+            </div>
+          </header>
+          <button class="element-primary-button" id="primaryButton"><div class="text-wrapper-8">LOGOUT</div></button>
+        </div>
+        <footer class="footer">
+          <p class="element-all-rights">
+            © 2024 All rights reserved. <br />Made by students from Polytechnic University of the Philippines - Manila.
+          </p>
+        </footer>
+        <div class="frame-5">
+          <div class="form">
+            <div class="deposit-account">
+              <div class="element-input-field-with">
+                <label class="text-wrapper-9" for="input-1">*Bank and Branch Address</label>
+                <input class="field" placeholder="Enter Bank and Branch Address" type="text" id="input-1" />
+              </div>
+              <div class="element-input-field-with-2">
+                <label class="label" for="input-2">*Account Number</label>
+                <input class="field" placeholder="Enter Account Number" type="text" id="input-2" />
+              </div>
+          
+
+              <div class="frame-6">
+                <div class="text-wrapper-9">*Account Type</div>
+                <div class="component">
+                  <select class="div-2">
+                    <option value="" selected disabled>Select Account Type</option>
+                    <option value="unemployed">Savings</option>
+                    <option value="self-employed">Checking</option>
+                    <option value="professional">Time Deposit</option>
+                  </select>
+                </div>
+              </div>
+
+
+              <div class="element-input-field-with-3">
+                <label class="text-wrapper-9" for="input-3">Bank and Branch Address</label>
+                <input class="label-wrapper" placeholder="Enter Bank and Branch Address" type="text" id="input-3" />
+              </div>
+              <div class="element-input-field-with-4">
+                <label class="text-wrapper-10" for="input-4">Account Number</label>
+                <input class="field" placeholder="Enter Account Number" type="text" id="input-4" />
+              </div>
+              <div class="frame-7">
+                <div class="text-wrapper-9">*Account Type</div>
+                <div class="component">
+                  <select class="div-2">
+                    <option value="" selected disabled>Select Account Type</option>
+                    <option value="unemployed">Savings</option>
+                    <option value="self-employed">Checking</option>
+                    <option value="professional">Time Deposit</option>
+                  </select>
+                </div>
+              </div>
+              <div class="text-wrapper-11">DEPOSIT ACCOUNTS INFORMATION</div>
+            </div>
+
+                     <!--Save Button-->
+            <div class="save-button-container">
+              <div class="primary-button-wrapper3" id="groupContainer">
+                  <div class="primary-button31">
+                      <div class="text-wrapper-98" >SAVE</div>
+                  </div>
+              </div>
+          </div>
+
+            <div class="existing-loan">
+              <div class="existing-loans">EXISTING LOANS INFORMATION</div>
+
+               <!--DEPOSIT ACCOUNTS INFORMATION attributes-->
+              <div class="element-input-field-with-5">
+                <div class="text-wrapper-9">*Monthly Amortization</div>
+                <input class="input" placeholder="Enter Monthly Amortization" type="text" />
+              </div>
+              <div class="element-input-field-with-6">
+                <div class="text-wrapper-9">*Original Loan Amount</div>
+                <input class="input" placeholder="Enter Original Loan Amount" type="text" />
+              </div>
+              <div class="element-input-field-with-7">
+                <div class="text-wrapper-9">*Type of Loan</div>
+                <input class="input" placeholder="Enter Type of Loan" type="text" />
+              </div>
+              <div class="element-input-field-with-8">
+                <label class="text-wrapper-9" for="input-5">*Name of Creditor/Bank</label>
+                <input class="input" placeholder="Enter Name of Creditor/Bank" type="text" id="input-5" />
+              </div>
+              <div class="element-input-field-with-9">
+                <div class="text-wrapper-9">*Outstanding Balance</div>
+                <input class="input" placeholder="Enter Outstanding Balance" type="text" />
+              </div>
+              <div class="element-input-field-with">
+                <div class="text-wrapper-10">*Maturity Date</div>
+                <input class="field" placeholder="YYYY/MM/DD" type="text" />
+              </div>
+              <div class="element-input-field-with-10">
+                <div class="text-wrapper-9">Monthly Amortization</div>
+                <input class="field" placeholder="Enter Monthly Amortization" type="text" />
+              </div>
+              <div class="element-input-field-with-11">
+                <div class="text-wrapper-9">Original Loan Amount</div>
+                <input class="input" placeholder="Enter Original Loan Amount" type="text" />
+              </div>
+              <div class="element-input-field-with-12">
+                <div class="text-wrapper-9">Type of Loan</div>
+                <input class="input" placeholder="Enter Type of Loan" type="text" />
+              </div>
+              <div class="element-input-field-with-13">
+                <label class="text-wrapper-9" for="input-6">Name of Creditor/Bank</label>
+                <input class="input" placeholder="Enter Name of Creditor/Bank" type="text" id="input-6" />
+              </div>
+              <div class="element-input-field-with-14">
+                <div class="text-wrapper-9">Outstanding Balance</div>
+                <input class="input" placeholder="Enter Outstanding Balance" type="text" />
+              </div>
+              <div class="element-input-field-with-15">
+                <div class="text-wrapper-10">Maturity Date</div>
+                <input class="field" placeholder="YYYY/MM/DD" type="text" />
+              </div>
+            </div>
+
+              <!--SPOUSE'S FINANCIAL INFORMATION attributes-->
+            <div class="spouse-financial">
+              <div class="overlap-2">
+                <div class="overlap-group-3">
+                  <div class="spouse-s-FINANCIAL">SPOUSE'S FINANCIAL INFORMATION</div>
+                  <div class="frame-8">
+                    <div class="text-wrapper-9">*Employment Type</div>
+                    <div class="div-3">  
+                      <select class="label-4">
+                        <option value="" selected disabled>Select Type</option>
+                          <option value="unemployed">Unemployed</option>
+                          <option value="self-employed">Self-Employed</option>
+                          <option value="professional">Professional</option>
+                          <option value="ofw">OFW</option>
+                      </select>                           
+                    </div>
+                  </div>
+                </div>
+                <div class="element-input-field-with-16">
+                  <label class="text-wrapper-9" for="input-7">Telephone No.</label>
+                  <input class="input" placeholder="Enter Telephone No." type="text" id="input-7" />
+                </div>
+              </div>
+              <div class="element-input-field-with-17">
+                <label class="text-wrapper-9" for="input-8">*Office Address</label>
+                <input class="field-2" placeholder="Enter Office Address" type="text" id="input-8" />
+              </div>
+              <div class="element-input-field-with-18">
+                <div class="text-wrapper-9">*Date Hired/Start of Business</div>
+                <input class="field" placeholder="YYYY/MM/DD" type="text" />
+              </div>
+              <div class="element-input-field-with-6">
+                <label class="text-wrapper-9" for="input-9">*Employer/Business Name</label>
+                <input class="input" placeholder="Enter Employer/Business Name" type="text" id="input-9" />
+              </div>
+              <div class="element-input-field-with-19">
+                <div class="text-wrapper-9">*Years of Employment/Business</div>
+                <input class="input" placeholder="Enter Years of Employment/Business" type="text" />
+              </div>
+              <div class="element-input-field-with-20">
+                <div class="text-wrapper-9">Others:</div>
+                <input class="field-3" placeholder="Enter Other Information" type="text" />
+              </div>
+              <div class="element-input-field-with-21">
+                <div class="text-wrapper-9">*Previous Employer</div>
+                <input class="input" placeholder="Enter Previous Employer" type="text" />
+              </div>
+              <div class="group">
+                <div class="text-wrapper-12">*Allowances Business</div>
+                <input class="field-4" placeholder="Enter Allowances Business" type="text" />
+              </div>
+              <div class="element-input-field-with-22">
+                <div class="text-wrapper-9">*Previous Title/Position</div>
+                <input class="input" placeholder="Enter Previous Title/Position" type="text" />
+              </div>
+              <div class="element-input-field-with-23">
+                <div class="text-wrapper-9">*Commissions</div>
+                <input class="input" placeholder="Enter Commissions" type="text" />
+              </div>
+              <div class="element-input-field-with-24">
+                <div class="text-wrapper-9">*Rental Income</div>
+                <input class="field-5" placeholder="Enter Rental Income" type="text" />
+              </div>
+              <div class="element-input-field-with-25">
+                <div class="text-wrapper-9">*Total</div>
+                <input class="field-6" placeholder="Enter Total Amount" type="text" />
+              </div>
+              <div class="element-input-field-with-26">
+                <div class="text-wrapper-9">*Gross Annual Salary</div>
+                <input class="input" placeholder="Enter Gross Annual Salary" type="text" />
+              </div>
+              <div class="element-input-field-with-27">
+                <div class="text-wrapper-9">*Nature of Business</div>
+                <input class="input" placeholder="Enter Nature of Business" type="text" />
+              </div>
+              <div class="element-input-field-with-28">
+                <div class="text-wrapper-13">*Present Title/Position</div>
+                <input class="input" placeholder="Enter Present Title/Position" type="text" />
+              </div>
+              <div class="element-input-field-with-29">
+                <div class="text-wrapper-14">*Business Income</div>
+                <input class="field-7" placeholder="Enter Business Income" type="text" />
+              </div>
+            </div>
+
+         <!--BORROWER'S FINANCIAL INFORMATION attributes-->
+            <div class="borrower-financial">
+              <div class="financial">
+                <div class="overlap-2">
+                  <div class="overlap-group-4">
+                    <div class="BORROWER-s-FINANCIAL">BORROWER'S FINANCIAL INFORMATION</div>
+
+                    <div class="frame-8">
+                      <div class="text-wrapper-9">*Employment Type</div>
+                      <div class="div-3">  
+                        <select class="label-4">
+                          <option value="" selected disabled>Select Type</option>
+                            <option value="unemployed">Unemployed</option>
+                            <option value="self-employed">Self-Employed</option>
+                            <option value="professional">Professional</option>
+                            <option value="ofw">OFW</option>
+                        </select>                           
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="element-input-field-with-16">
+                    <label class="text-wrapper-9" for="input-10">*Telephone No.</label>
+                    <input class="input" placeholder="Enter Telephone No." type="text" id="input-10" />
+                  </div>
+                </div>
+                <div class="element-input-field-with-17">
+                  <label class="text-wrapper-9" for="input-11">*Office Address</label>
+                  <input class="field-2" placeholder="Enter Office Address" type="text" id="input-11" />
+                </div>
+                <div class="element-input-field-with-18">
+                  <div class="text-wrapper-9">*Date Hired/Start of Business</div>
+                  <input class="field" placeholder="YYYY/MM/DD" type="text" />
+                </div>
+                <div class="element-input-field-with-6">
+                  <label class="text-wrapper-9" for="input-12">*Employer/Business Name</label>
+                  <input class="input" placeholder="Enter Employer/Business Name" type="text" id="input-12" />
+                </div>
+                <div class="element-input-field-with-19">
+                  <div class="text-wrapper-9">*Years of Employment/Business</div>
+                  <input class="input" placeholder="Enter Years of Employment/Business" type="text" />
+                </div>
+                <div class="element-input-field-with-20">
+                  <div class="text-wrapper-9">Others:</div>
+                  <input class="field-3" placeholder="Enter Other Information" type="text" />
+                </div>
+                <div class="element-input-field-with-21">
+                  <div class="text-wrapper-9">*Previous Employer</div>
+                  <input class="input" placeholder="Enter Previous Employer" type="text" />
+                </div>
+                <div class="group">
+                  <div class="text-wrapper-12">*Allowances Business</div>
+                  <input class="field-4" placeholder="Enter Allowances Business" type="text" />
+                </div>
+                <div class="element-input-field-with-22">
+                  <div class="text-wrapper-9">*Previous Title/Position</div>
+                  <input class="field-4" placeholder="Enter Previous Title/Position" type="text" />
+                </div>
+                <div class="element-input-field-with-23">
+                  <div class="text-wrapper-9">*Commissions</div>
+                  <input class="input" placeholder="Enter Commissions" type="text" />
+                </div>
+                <div class="element-input-field-with-24">
+                  <div class="text-wrapper-9">*Rental Income</div>
+                  <input class="field-5" placeholder="Enter Rental Income" type="text" />
+                </div>
+                <div class="element-input-field-with-25">
+                  <div class="text-wrapper-9">*Total</div>
+                  <input class="field-6" placeholder="Enter Total Amount" type="text" />
+                </div>
+                <div class="element-input-field-with-26">
+                  <div class="text-wrapper-9">*Gross Annual Salary</div>
+                  <input class="input" placeholder="Enter Gross Annual Salary" type="text" />
+                </div>
+                <div class="element-input-field-with-27">
+                  <div class="text-wrapper-9">*Nature of Business</div>
+                  <input class="input" placeholder="Enter Nature of Business" type="text" />
+                </div>
+                <div class="element-input-field-with-28">
+                  <div class="text-wrapper-13">*Present Title/Position</div>
+                  <input class="input" placeholder="Enter Present Title/Position" type="text" />
+                </div>
+                <div class="element-input-field-with-29">
+                  <div class="text-wrapper-14">*Business Income</div>
+                  <input class="field-7" placeholder="Enter Business Income" type="text" />
+                </div>
+              </div>
+            </div>
+
+            
+         <!--SPOUSE'S PERSONAL INFORMATION attributes-->
+            <div class="spouse-information">
+              <div class="div-wrapper"><div class="text-wrapper-9">*First Name</div>
+              <input class="field-8" placeholder="Enter First Name" type="text" id="input-13" />
+            </div>
+              <div class="element-input-field-with-30">
+                <label class="text-wrapper-9" for="input-13">*Last Name</label>
+                <input class="field-8" placeholder="Enter Last Name" type="text" id="input-13" />
+              </div>
+              <div class="element-input-field-with-31">
+                <label class="text-wrapper-9" for="input-14">*Residence Phone</label>
+                <input class="field-9" placeholder="Enter Residence Phone" type="text" id="input-14" />
+              </div>
+              <div class="element-input-field-with-32">
+                <label class="text-wrapper-9" for="input-15">*Mobile Phone</label>
+                <input class="field-9" placeholder="Enter Mobile Phone" type="text" id="input-15" />
+              </div>
+              <div class="element-input-field-with-33">
+                <p class="text-wrapper-9">*SSS No. or GSIS No.</p>
+                <input class="field-9" placeholder="Enter SSS No. or GSIS No." type="text" />
+              </div>
+              <div class="element-input-field-with-34">
+                <div class="text-wrapper-9">*Tax Identification No. (TIN)</div>
+                <input class="field-9" placeholder="Enter Tax Identification No. (TIN)" type="text" />
+              </div>
+              <div class="element-input-field-with-35">
+                <label class="text-wrapper-9" for="input-16">*Email</label>
+                <input class="field-10" placeholder="Enter Email" type="text" id="input-16" />
+              </div>
+              <div class="element-input-field-with-36">
+                <label class="text-wrapper-9" for="input-17">Middle Name</label>
+                <input class="field-8" placeholder="Enter Middle Name" type="text" id="input-17" />
+              </div>
+              <input class="field-11" placeholder="Enter First Name" type="text" />
+              <div class="element-input-field-with-37">
+                <div class="text-wrapper-15">*Date of Birth</div>
+                <input class="field-13" placeholder="YYYY/MM/DD" type="text" />
+              </div>
+              <div class="element-input-field-with-38">
+                <div class="text-wrapper-15">*Age</div>
+                <input class="field-13" placeholder="Enter Age" type="text" />
+              </div>
+              <div class="element-input-field-with-39">
+                <div class="text-wrapper-15">*Nationality</div>
+                <input class="field-13" placeholder="Enter Nationality" type="text" />
+              </div>
+              <div class="element-input-field-with-40">
+                <div class="text-wrapper-15">*Citizenship</div>
+                <input class="field-13" placeholder="Enter Citizenship" type="text" />
+              </div>
+              <div class="element-input-field-with-41">
+                <div class="text-wrapper-9">*Birth Place</div>
+                <input class="field-14" placeholder="Enter Birth Place" type="text" />
+              </div>
+              <div class="element-input-field-with-42">
+                <label class="text-wrapper-9" for="input-18">*Mother's Maiden Name</label>
+                <input class="field-15" placeholder="Enter Mother's Maiden Name" type="text" id="input-18" />
+              </div>
+              <div class="spouse-s-PERSONAL">SPOUSE'S PERSONAL INFORMATION</div>
+            </div>
+
+            <!--BORROWER'S PERSONAL INFORMATION attributes-->
+            <div class="borrower-information">
+              <div class="BORROWER-s-PERSONAL">BORROWER'S PERSONAL INFORMATION</div>
+              <div class="element-input-field-with-43"><div class="text-wrapper-9">*First Name
+                
+              </div>
+              
+            </div>
+              <div class="element-input-field-with-44">
+                <label class="text-wrapper-9" for="input-19">*Last Name</label>
+                <input class="field-16" placeholder="Enter Last Name" type="text" id="input-19" />
+              </div>
+              <div class="element-input-field-with-45">
+                <label class="text-wrapper-16" for="input-20">*Mailing Address</label>
+                <input class="field-17" placeholder="Enter Mailing Address" type="text" id="input-20" />
+              </div>
+              <div class="element-input-field-with-46">
+                <label class="text-wrapper-17" for="input-21">*Residence Phone</label>
+                <input class="field-18" placeholder="Enter Residence Phone" type="text" id="input-21" />
+              </div>
+              <div class="element-input-field-with-47">
+                <label class="text-wrapper-17" for="input-22">*Mobile Phone</label>
+                <input class="field-18" placeholder="Enter Mobile Phone" type="text" id="input-22" />
+              </div>
+              <div class="element-input-field-with-48">
+                <p class="text-wrapper-9">*SSS No. or GSIS No.</p>
+                <input class="field-19" placeholder="Enter SSS No. or GSIS No." type="text" />
+              </div>
+              <div class="element-input-field-with-49">
+                <div class="text-wrapper-9">*Tax Identification No. (TIN)</div>
+                <input class="field-19" placeholder="Enter Tax Identification No. (TIN)" type="text" />
+              </div>
+              <div class="element-input-field-with-50">
+                <label class="text-wrapper-9" for="input-23">*Email</label>
+                <input class="field-20" placeholder="Enter Email" type="text" id="input-23" />
+              </div>
+              <div class="element-input-field-with-51">
+                <label class="text-wrapper-9" for="input-24">Middle Name</label>
+                <input class="field-16" placeholder="Enter Middle Name" type="text" id="input-24" />
+              </div>
+              <input class="field-21" placeholder="Enter First Name" type="text" />
+              <div class="element-input-field-with-52">
+                <div class="text-wrapper-18">*Date of Birth</div>
+                <input class="field-93" placeholder="YYYY/MM/DD" type="text" />
+              </div>
+              <div class="element-input-field-with-53">
+                <div class="text-wrapper-19">*Age</div>
+                <input class="field-13" placeholder="Enter Age" type="text" />
+              </div>
+              <div class="text-wrapper-20">*Marital Status</div>
+              <div class="element-input-field-with-54"><div class="text-wrapper-19">*Gender</div></div>
+              <div class="element-input-field-with-55">
+                <div class="text-wrapper-19">*Nationality</div>
+                <input class="field-13" placeholder="Enter Nationality" type="text" />
+              </div>
+              <div class="element-input-field-with-56">
+                <div class="text-wrapper-21">*Citizenship</div>
+                <input class="field-23" placeholder="Enter Citizenship" type="text" />
+              </div>
+              <div class="element-input-field-with-57"><div class="text-wrapper-22">*Home Ownership</div></div>
+              <div class="element-input-field-with-58">
+                <div class="text-wrapper-22">*Resident Since</div>
+                <input class="field-24" placeholder="Enter Year" type="text" />
+              </div>
+              <div class="element-input-field-with-59">
+                <p class="no-of-children-ages">*No. of Children &amp; Ages</p>
+                <input class="field-25" placeholder="Example: 2(14.18)" type="text" />
+              </div>
+              <div class="element-input-field-with-60">
+                <div class="text-wrapper-16">*No. of Dependents</div>
+                <input class="field-26" placeholder="Enter No. of Dependents" type="text" />
+              </div>
+              <div class="element-input-field-with-61">
+                <div class="text-wrapper-23">*Birth Place</div>
+                <input class="field-7" placeholder="Enter Birth Place" type="text" />
+              </div>
+              <div class="element-input-field-with-62">
+                <label class="text-wrapper-9" for="input-25">*Complete Present Address</label>
+                <input class="field-27" placeholder="Enter Complete Present Address" type="text" id="input-25" />
+              </div>
+              <div class="element-input-field-with-63">
+                <label class="text-wrapper-9" for="input-26">*Complete Permanent Address</label>
+                <input class="field-27" placeholder="Enter Complete Permanent Address" type="text" id="input-26" />
+              </div>
+              <div class="element-input-field-with-64">
+                <label class="text-wrapper-24" for="input-27">*Complete Previous Address</label>
+                <input class="field-27" placeholder="Enter Complete Previous Address" type="text" id="input-27" />
+              </div>
+              <div class="element-input-field-with-65">
+                <label class="text-wrapper-9" for="input-28">*Mother's Maiden Name</label>
+                <input class="field-16" placeholder="Enter Mother's Maiden Name" type="text" id="input-28" />
+              </div>
+             
+              <div class="component-2">
+                <select class="label-6">
+                    <option value="" selected disabled>Select Ownership</option>
+                    <option value="owned">Owned</option>
+                    <option value="used-rented">Used Rented</option>
+                    <option value="mortgaged">Mortgaged</option>
+                </select>   
+            </div>
+        
+              <div class="component-2111">
+                <select class="status-dropdown">
+                    <option value="" selected disabled>Select Status</option>
+                    <option value="unmarried">Unmarried</option>
+                    <option value="married">Married</option>
+                    <option value="separated">Legally Separated/Annulled</option>
+                    <option value="widowed">Widowed</option>
+                    <option value="divorced">Divorced</option>
+                </select>
+            </div>
+            
+            <div class="element-input-field-with-54">
+              <div class="text-wrapper-19">*Gender</div>
+              <div class="radio-group">
+                <label>
+                  <input type="radio" name="gender" value="M">
+                  M
+                </label>
+                <label>
+                  <input type="radio" name="gender" value="M">
+                  F
+                </label>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- JAVASCRIPT CODES-->
+     <script>
+      var homeText = document.getElementById("homeText");
+      if (homeText) {
+        homeText.addEventListener("click", function (e) {
+          window.location.href = "../user/landing-page.html";
+        });
+      }
+      
+      var aboutText = document.getElementById("aboutText");
+      if (aboutText) {
+        aboutText.addEventListener("click", function (e) {
+          window.location.href = "../user/about-us.html";
+        });
+      }
+      
+      var contactAgreementText = document.getElementById("contactAgreementText");
+      if (contactAgreementText) {
+        contactAgreementText.addEventListener("click", function (e) {
+          window.location.href = "../user/contact-agreement.html";
+        });
+      }
+      
+      var primaryButton = document.getElementById("primaryButton");
+      if (primaryButton) {
+        primaryButton.addEventListener("click", function (e) {
+          window.location.href = "../user/landing-page.html";
+        });
+      }
+      
+      var userRequestsContainer = document.getElementById("userRequestsContainer");
+      if (userRequestsContainer) {
+        userRequestsContainer.addEventListener("click", function (e) {
+          window.location.href = "../user/newreq-agreement.html";
+        });
+      }
+
+      var userRequestsContainer = document.getElementById("groupContainer");
+      if (userRequestsContainer) {
+        userRequestsContainer.addEventListener("click", function (e) {
+          window.location.href = "../user/saved-profile.html";
+        });
+      }
+      </script>
+    
+  </body>
+</html>
