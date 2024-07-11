@@ -14,21 +14,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap"
     />
-    <style>
-        .hidden {
-          display: none;
-        }
-        .user-panel {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-        }
-        .spouses-financial-information5
-        .personal-info-section,
-        .financial-info-section {
-          width: 48%;
-        }
-      </style>
+   
   </head>
   <body>
     <div class="profile4">
@@ -71,35 +57,20 @@
 
 <main class="user-panel">
     <form id="profileForm" action="profile_form.php" method="post">
-        <div class="user-info">
-          <div class="user-info-child"></div>
-          <div class="user-name-wrapper">
-            <div class="user-name">
-              <img
-                class="mask-group-icon42"
-                alt=""
-                src="./public/mask-group-1@2x.png"
-              />
-              <div class="profile-frame">
-                <b class="profile5">Profile</b>
-              </div>
-            </div>
+
+      <!--For Profile and New Request-->
+      <div class="user-info">
+        <div class="user-name">
+         
+          <div class="profile-frame">
+            <b class="profile5">MY PROFILE</b>
           </div>
-          <div class="user-requests" id="userRequestsContainer">
-            <img
-              class="mask-group-icon43"
-              alt=""
-              src="./public/mask-group-2@2x.png"
-            />
-            <div class="new-requests-frame">
-                <b class="new-requests4">New Requests</b>
-              </div>
-            </div>
-          </div>
+        </div>
+      </div>
+
 
         <div class="form-container-wrapper">
           <div class="form-container">
-
 
             <!--BORROWER'S PERSONAL INFORMATION INPUTS-->
             <div class="personal-fields-inputs">
@@ -121,27 +92,27 @@
                   <input class="label680" placeholder="Enter Last Name " type="text" name="borr_last" required/>
                 </div>
                 <div class="date-of-birth16">*Date of Birth</div>
-                    <input class="label689" placeholder="YYYY/MM/DD" type="text" name="borr_dob" required/>
+                    <input class="label689" placeholder="YYYY-MM-DD" type="text" name="borr_dob" required/>
 
                 <div class="age16">*Age</div>
                     <div class="field640">
                       <input class="label690" placeholder="Enter Age" type="text" name="borr_age" required/>
                     </div>
-                <div class="gender10">*Gender</div>
+               
+                    <div class="gender10">*Gender</div>
                     <div class="marital-status-options-wrapper">
                       <div class="marital-status-options">
-                        <div class="icons40">
-                          <input type="radio" id="male" name="borr_gender" value="M" class="icons41" required>
-      
-                          <label for="male">M</label><br>
+                        <div class="gender-option">
+                          <input type="radio" id="male" name="gender" class="gender-input">
+                          <label for="male">M</label>
                         </div>
-                        <div class="icons42">
-                          <input type="radio" id="female" name="borr_gender" value="F" class="icons43" requried>
-      
+                        <div class="gender-option">
+                          <input type="radio" id="female" name="gender" class="gender-input">
                           <label for="female">F</label>
                         </div>
                       </div>
                     </div>
+                    
 
                 <div class="birth-place16">*Birth Place</div>
                     <div class="field646">
@@ -254,7 +225,7 @@
                 <div class="input-field-with-label373">
                     <div class="date-of-birth14">*Date of Birth</div>
                     <div class="field565">
-                      <input class="field565" placeholder="YYYY/MM/DD" type="text" name="sp_dob"/>
+                      <input class="field565" placeholder="YYYY-MM-DD" type="text" name="sp_dob"/>
                     </div>
                 </div>
                 <div class="input-field-with-label374">
@@ -364,7 +335,7 @@
 
                 <div class="date-hiredstart-of13">*Date Hired/Start of Business</div>
                     <div class="field575">
-                    <input class="label621" placeholder="YYYY/MM/DD" type="text" name="borr_emp_datehired"/>
+                    <input class="label621" placeholder="YYYY-MM-DD" type="text" name="borr_emp_datehired"/>
                 </div>
 
                 <div class="input-field-with-label380">
@@ -464,7 +435,7 @@
 
                     <div class="date-hiredstart-of-spouse">*Date Hired/Start of Business</div>
                     <div class="field-date-hiredstart-of-spouse">
-                        <input class="input-date-hiredstart-of-spouse" placeholder="YYYY/MM/DD" type="text" name="sp_emp_datehired"/>
+                        <input class="input-date-hiredstart-of-spouse" placeholder="YYYY-MM-DD" type="text" name="sp_emp_datehired"/>
                     </div>
 
                     <div class="input-field-with-label-spouse">
@@ -548,7 +519,7 @@
                             <div class="input-field-with-label432">
                             <div class="maturity-date8">*Maturity Date</div>
                             <div class="field624">
-                                <input class="label673" placeholder="YYYY/MM/DD" type="text" name="maturity_date[]"/>
+                                <input class="label673" placeholder="YYYY-MM-DD" type="text" name="maturity_date[]"/>
                             </div>
                             </div>
                         </div>
@@ -768,31 +739,12 @@
          });
        }
        
-       var saveButton = document.getElementById("saveButton");
-        if (saveButton) {
-          saveButton.addEventListener("click", function (e) {
-            e.preventDefault(); // Prevent the default form submission
-            
-            // Check if the button is not disabled
-            if (!this.disabled) {
-              // Get the form element
-              var form = document.getElementById("profileForm");
-              
-              // Submit the form
-              form.submit();
-              
-              // Add an event listener for when the form is submitted
-              form.addEventListener('submit', function() {
-                // Redirect to saved-profile.html after a short delay
-                setTimeout(function() {
-                  window.location.href = "saved-profile.html";
-                }, 100); // 100ms delay to allow form submission to complete
-              });
-            } else {
-              alert("Please fill all required fields before saving.");
-            }
-          });
-        }
+       var userRequestsContainer = document.getElementById("saveButton");
+      if (userRequestsContainer) {
+        userRequestsContainer.addEventListener("click", function (e) {
+          window.location.href = "../user/saved-profile.html";
+        });
+      }
        </script>
     </body>
 </html>

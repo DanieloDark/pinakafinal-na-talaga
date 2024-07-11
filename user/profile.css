@@ -1,24 +1,29 @@
+
 .header-background4,
 .mask-group-icon41 {
   position: absolute;
   height: 100%;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 0; /* Ensure it starts from the left edge */
 }
+
 .header-background4 {
   width: 100%;
   margin: 0 !important;
   right: 0;
 }
+
 .mask-group-icon41 {
   width: 18.95%;
-  right: 81.05%;
+  left: 0; /* Adjusted to move to the left */
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
   object-fit: cover;
+  left: -70px; /* Adjust left positioning as needed */
 }
+
 .bpi19,
 .housing-loan25 {
   text-decoration: none;
@@ -28,20 +33,25 @@
   display: inline-block;
   white-space: nowrap;
 }
+
 .bpi19 {
-  position: absolute;
-  height: calc(100% - 10px);
-  width: 29.47%;
-  top: 5px;
-  left: 17.89%;
-  line-height: 54px;
-  min-width: 84px;
+    position: absolute;
+    top: 5px; /* Adjust top positioning as needed */
+    left: 30px; /* Adjust left positioning as needed */
+    font-weight: 900;
+    text-decoration: none;
+    color: inherit;
+    white-space: nowrap;
+    left: -20px;
 }
+
 .housing-loan25 {
   position: relative;
   min-width: 120px;
   flex-shrink: 0;
+  left: -75px;
 }
+
 .housing-loan-wrapper8 {
   display: flex;
   flex-direction: row;
@@ -49,6 +59,7 @@
   justify-content: flex-start;
   padding: 0 var(--padding-12xs);
 }
+
 .application-form16 {
   margin-top: -3px;
   text-decoration: none;
@@ -59,13 +70,16 @@
   display: inline-block;
   flex-shrink: 0;
   white-space: nowrap;
+  left: -75px;
 }
+
 .application-form-frame,
 .header-content {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .application-form-frame {
   align-self: stretch;
   height: 20px;
@@ -74,21 +88,24 @@
   box-sizing: border-box;
   font-size: var(--font-size-base);
 }
+
 .header-content {
   position: absolute;
   top: 14px;
-  left: 134px;
+  left: 134px; /* Adjusted left position */
   width: 151px;
   flex-direction: column;
   text-align: left;
   font-size: var(--font-size-xl);
 }
+
 .logo8 {
   height: 64px;
   width: 285px;
   position: relative;
   z-index: 1;
 }
+
 .about8,
 .contact-agreement9,
 .home16 {
@@ -99,6 +116,8 @@
   display: inline-block;
   flex-shrink: 0;
   cursor: pointer;
+  left: -150px;
+
 }
 .about8,
 .contact-agreement9 {
@@ -252,91 +271,267 @@
   object-fit: contain;
   min-height: 20px;
 }
-.new-requests4 {
-  align-self: stretch;
-  position: relative;
-}
-.new-requests-frame {
-  flex: 1;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: var(--padding-12xs) 0 0;
-}
-.new-requests-frame,
-.user-info,
-.user-requests {
-  display: flex;
-  justify-content: flex-start;
-}
-.user-requests {
-  align-self: stretch;
-  overflow: hidden;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: var(--padding-mini) var(--padding-lg) var(--padding-base)
-    var(--padding-21xl);
-  gap: var(--gap-xs);
-  cursor: pointer;
-  z-index: 1;
-}
-.user-info {
-  width: 270px;
-  background: linear-gradient(180deg, #410c0e, #a72025);
-  flex-direction: column;
-  align-items: flex-end;
-  padding: var(--padding-46xl) 0 var(--padding-720xl);
-  box-sizing: border-box;
-  gap: var(--gap-7xl);
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 20px;
 }
 
 .user-panel {
-  align-self: stretch;
-  max-width: 100%;
-  color: var(--color-white);
-  font-family: var(--font-roboto);
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgb(222, 222, 222);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.all-rights-reserved18,
-.made-by-students18 {
-  margin: 0;
+
+.user-name-wrapper, .user-requests {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
-.all-rights-reserved-container18 {
-  position: relative;
-  font-weight: 300;
-}
-.footer-child12 {
-  height: 85px;
-  width: 1440px;
-  position: relative;
-  display: none;
-  max-width: 100%;
-}
-.footer18,
-.profile4 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.footer18 {
-  align-self: stretch;
-  flex-direction: row;
-  padding: var(--padding-12xl) var(--padding-73xl);
-  box-sizing: border-box;
-  max-width: 100%;
-  text-align: left;
-  font-size: var(--font-size-3xs);
-  color: var(--color-brown-100);
-  font-family: var(--body-body-14);
-}
-.profile4 {
-  width: 100%;
-  position: relative;
-  background-color: var(--color-white);
-  overflow-x: hidden;
-  overflow-y: auto !important;
-  flex-direction: column;
-  line-height: normal;
-  letter-spacing: normal;
+
+.user-name img, .user-requests img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }
 
 
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.form-container > div {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form label {
+    display: absolute;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+form .horizontal-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+form .horizontal-group > div {
+    width: 48%;
+}
+
+.hidden {
+    display: none;
+}
+
+.button-container {
+    text-align: right;
+    margin-top: 20px;
+}
+
+button {
+    background: linear-gradient(-88.81deg, #ec696d, #a32c30 33%, #3d1112);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a92218;
+}
+
+
+.hidden {
+    display: none;
+  }
+  .user-panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .spouses-financial-information5
+  .personal-info-section,
+  .financial-info-section {
+    width: 48%;
+  }
+
+  .all-rights-reserved18,
+  .made-by-students18 {
+    margin: 0;
+  }
+  .all-rights-reserved-container18 {
+    position: relative;
+    font-weight: 300;
+  }
+  .footer-child12 {
+    height: 85px;
+    width: 1440px;
+    position: relative;
+    display: none;
+    max-width: 100%;
+  }
+  .footer18,
+  .profile4 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .footer18 {
+    align-self: stretch;
+    flex-direction: row;
+    padding: var(--padding-12xl) var(--padding-73xl);
+    box-sizing: border-box;
+    max-width: 100%;
+    text-align: left;
+    font-size: var(--font-size-3xs);
+    color: var(--color-brown-100);
+    font-family: var(--body-body-14);
+  }
+  .profile4 {
+    width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    gap: var(--gap-19xl-5);
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  
+  .marital-status-options-wrapper {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: flex-start; /* Align items to the start of the column */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  .marital-status-options {
+    display: flex;
+    flex-direction: column; /* Arrange gender options vertically */
+    gap: 10px; /* Adjust the gap between gender options as needed */
+  }
+  
+  .gender-option {
+    display: flex;
+    align-items: center; /* Align items in the center horizontally */
+    gap: 10px; /* Adjust the gap between input and label as needed */
+  }
+  
+  .gender-input {
+    margin: 0 0 0 5px; /* Adjust the left margin to 5px (or your preferred amount) */
+  }
+
+  /* Make labels bold and red */
+
+  .borrowers-personal-informatio1 {
+    font-weight: bold;
+  color: #ffffff;
+  background-color: #992323;
+  text-align: center; /* Center aligns text within the element */
+  padding: 10px; /* Adjust padding as needed */
+  margin-bottom: 15px;
+  }
+
+  .spouses-personal-information5 {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #992323;
+    text-align: center; /* Center aligns text within the element */
+    padding: 10px; /* Adjust padding as needed */
+    margin-bottom: 15px;
+  }
+  .borrowers-financial-informati{
+    font-weight: bold;
+  color: #ffffff;
+  background-color: #992323;
+  text-align: center; /* Center aligns text within the element */
+  padding: 10px; /* Adjust padding as needed */
+  margin-bottom: 15px;
+  }
+  .spouses-financial-information {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #992323;
+    text-align: center; /* Center aligns text within the element */
+    padding: 10px; /* Adjust padding as needed */
+    margin-bottom: 15px;
+  }
+  .existing-loan-information14 {
+    font-weight: bold;
+  color: #ffffff;
+  background-color: #992323;
+  text-align: center; /* Center aligns text within the element */
+  padding: 10px; /* Adjust padding as needed */
+  margin-bottom: 15px;
+  }
+  .borrowers-financial-informati17
+  {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #992323;
+    text-align: center; /* Center aligns text within the element */
+    padding: 10px; /* Adjust padding as needed */
+    margin-bottom: 15px;
+  }
+
+ 
+  .user-info {
+    background-color: #d3b331;
+    padding: 10px; /* Adjust padding as needed */
+    color:#ffffff
+  }
+
+  .user-name {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center align items horizontally */
+   
+  }
+
+  .mask-group-icon42 {
+    /* Adjust styles for your image if necessary */
+    width: 50px; /* Example width */
+    height: 50px; /* Example height */
+    margin-right: 10px; /* Adjust spacing as needed */
+  }
+
+  .profile5 {
+    /* Adjust styles for the profile text */
+    font-weight: bold; /* Example font weight */
+  }
+  
+
+  
+  
+  
+  
+
+ 
+  
+
+  
+  
+  
+  
+  
+  
