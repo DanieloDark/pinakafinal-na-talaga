@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap"
+    />
+    <style>
+        .hidden {
+          display: none;
+        }
+        .user-panel {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        .spouses-financial-information5
+        .personal-info-section,
+        .financial-info-section {
+          width: 48%;
+        }
+      </style>
+  </head>
+  <body>
+    <div class="profile4">
+      <header class="frame-header">
+        <div class="header8">
+          <div class="header-background"></div>
+          <div class="logo8">
+            <img
+              class="mask-group-icon41"
+              loading="lazy"
+              alt=""
+              src="./public/mask-group@2x.png"
+            />
+
+            <a class="bpi19">BPI</a>
+            <div class="header-content">
+              <div class="housing-loan-wrapper8">
+                <a class="housing-loan25">Housing Loan</a>
+              </div>
+              <div class="application-form-frame">
+                <a class="application-form16">Application Form</a>
+              </div>
+            </div>
+          </div>
+          <nav class="navbar-items-wrapper">
+            <nav class="navbar-items">
+              <a class="home16" id="homeText">Home</a>
+              <a class="about8" id="aboutText">About</a>
+              <a class="contact-agreement9" id="contactAgreementText"
+                >Contact Agreement</a
+              >
+            </nav>
+          </nav>
+        </div>
+        <button class="primary-button30" id="primaryButton">
+          <div class="logout3">LOGOUT</div>
+        </button>
+      </header>
+
+
+<main class="user-panel">
+    <form id="profileForm" action="profile_form.php" method="post">
+        <div class="user-info">
+          <div class="user-info-child"></div>
+          <div class="user-name-wrapper">
+            <div class="user-name">
+              <img
+                class="mask-group-icon42"
+                alt=""
+                src="./public/mask-group-1@2x.png"
+              />
+              <div class="profile-frame">
+                <b class="profile5">Profile</b>
+              </div>
+            </div>
+          </div>
+          <div class="user-requests" id="userRequestsContainer">
+            <img
+              class="mask-group-icon43"
+              alt=""
+              src="./public/mask-group-2@2x.png"
+            />
+            <div class="new-requests-frame">
+                <b class="new-requests4">New Requests</b>
+              </div>
+            </div>
+          </div>
+
+        <div class="form-container-wrapper">
+          <div class="form-container">
+
+
+            <!--BORROWER'S PERSONAL INFORMATION INPUTS-->
+            <div class="personal-fields-inputs">
+              <div class="borrowers-personal-informatio1">
+                BORROWER'S PERSONAL INFORMATION
+              </div>
+                <div class="personal-fields-inputs">
+              <div class="component-294">
+                <div class="first-name16">*First Name</div>
+                <div class="field638">
+                    <input class="label688" placeholder="Enter First Name" type="text" name="borr_first" required/>
+                </div>
+                <div class="middle-name16">*Middle Name</div>
+                <div class="field637">
+                  <input class="label687" placeholder="Enter Middle Name" type="text" name="borr_middle"/>
+                </div>
+                <div class="last-name16">*Last Name</div>
+                <div class="field630">
+                  <input class="label680" placeholder="Enter Last Name " type="text" name="borr_last" required/>
+                </div>
+                <div class="date-of-birth16">*Date of Birth</div>
+                    <input class="label689" placeholder="YYYY/MM/DD" type="text" name="borr_dob" required/>
+
+                <div class="age16">*Age</div>
+                    <div class="field640">
+                      <input class="label690" placeholder="Enter Age" type="text" name="borr_age" required/>
+                    </div>
+                <div class="gender10">*Gender</div>
+                    <div class="marital-status-options-wrapper">
+                      <div class="marital-status-options">
+                        <div class="icons40">
+                          <input type="radio" id="male" name="borr_gender" value="M" class="icons41" required>
+      
+                          <label for="male">M</label><br>
+                        </div>
+                        <div class="icons42">
+                          <input type="radio" id="female" name="borr_gender" value="F" class="icons43" requried>
+      
+                          <label for="female">F</label>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="birth-place16">*Birth Place</div>
+                    <div class="field646">
+                    <input class="label696" placeholder="Enter Birth Place" type="text" name="borr_birth_place" required/>
+                </div>
+
+                <div class="nationality16">*Nationality</div>
+                    <input class="label691" placeholder="Enter Nationality" type="text" name="borr_nationality" required/>
+
+                <div class="citizenship17">*Citizenship</div>
+                    <input class="label692" placeholder="Enter Citizenship" type="text" name="borr_citizenship" required/>
+                
+                <div class="label">*Marital Status</div>
+                    <select id="maritalStatus" name="borr_marital_status" class="status-dropdown" required>
+                      <option value="" selected disabled>Select Status</option>
+                      <option value="unmarried">Unmarried</option>
+                      <option value="married">Married</option>
+                      <option value="separated">Legally Separated/Annulled</option>
+                      <option value="widowed">Widowed</option>
+                      <option value="divorced">Divorced</option>
+                    </select>
+                <div class="mothers-maiden-name16">*Mother's Maiden Name</div>
+                    <div class="field650">
+                    <input class="label700" placeholder="Enter Mother's Maiden Name " type="text" name="borr_mother" required/>
+                </div>
+
+                <div class="sss-no-or16">*SSS No. or GSIS No.</div>
+                <div class="field634">
+                  <input class="label684" placeholder="Enter SSS No. or GSIS No." type="text" name="borr_sssno"/>
+                </div>
+
+                <div class="tax-identification-no16">*Tax Identification No. (TIN)</div>
+                <div class="field635">
+                  <input class="label685" placeholder="Enter Tax Identification No." type="text" name="borr_tin"/>
+                </div>
+
+                    <div class="field644">*No. of Children and Ages </div>
+                        <input class="label694" placeholder="Children(Age1,..)" type="text" name="borr_children_ages"/>
+                    </div>
+                    <div class="field645">*No. of Dependents </div>
+                        <input class="label695" placeholder="Enter No. of Dependents" type="text" name="borr_dependents"/>
+                    <div class="complete-present-address10">*Complete Present Address</div>
+                    <div class="field647">
+                        <input class="label697" placeholder="Enter Complete Present Address" type="text" name="borr_present_address" required/>
+                    </div>
+                    <div class="field643">*Resident Since </div>
+                        <input class="label693" placeholder="Enter Year" type="text" name="borr_residency" required/>
+                    </div>
+                    <div class="complete-permanent-address20">*Complete Permanent Address</div>
+                    <div class="field648">
+                        <input class="label698" placeholder="Enter Complete Permanent Address " type="text" name="borr_permanent_address" required />
+                    </div>
+                    <div class="complete-permanent-address21">*Complete Previous Address</div>
+                    <div class="field649">
+                        <input class="label699" placeholder="Enter Complete Previous Address" type="text" name="borr_previous_address"/>
+                    </div>
+
+                    <div class="home-ownership">
+                        <div class="ownership">*Home Ownership</div>
+                          <select class="ownership-dropdown" name="borr_home_ownership" required>
+                              <option value="" selected disabled>Select Ownership</option>
+                              <option value="owned">Owned</option>
+                              <option value="used-rented">Used Rented</option>
+                              <option value="mortgaged">Mortgaged</option>
+                          </select>
+                    </div>
+
+                    <div class="field631">*Mailing Address</div>
+                    <input class="label681" placeholder="Enter Mailing Address" type="text" name="borr_mailingaddress" required/>
+
+                    <div class="email16">*Email</div>
+                        <div class="field636">
+                            <input class="label686" placeholder="Enter Email" type="text" name="borr_email"/>
+                        </div>
+                        
+    
+                    <div class="residence-phone16">*Residence Phone</div>
+                    <div class="field632">
+                        <input class="label682" placeholder="Enter Residence Phone" type="text" name="borr_residencephone" required/>
+                    </div>
+                    
+                    <div class="mobile-phone16">*Mobile Phone</div>
+                    <div class="field633">
+                        <input class="label683" placeholder="Enter Mobile Phone" type="text" name="borr_phoneno" required/>
+                    </div>
+            </div>
+
+
+            <!--SPOUSE'S PERSONAL INFORMATION INPUTS-->
+            <div id="spousePersonalInfo" class="spouse-informationvariant35 hidden">
+                <div class="spouses-personal-information5">
+                  SPOUSE'S PERSONAL INFORMATION
+                </div>
+                <div class="input-field-with-label365">
+                  <div class="first-name14">*First Name</div>
+                  <input class="label608" placeholder="Enter First Name" type="text" name="sp_first"/>
+                </div>
+                <div class="input-field-with-label372">
+                    <div class="middle-name14">*Middle Name</div>
+                    <div class="field563">
+                      <input class="label608" placeholder="Enter Middle Name" type="text" name="sp_middle"/>
+                    </div>
+                  </div>
+                <div class="input-field-with-label366">
+                  <div class="last-name14">*Last Name</div>
+                  <div class="field557">
+                    <input class="label602" placeholder="Enter Last Name" type="text" name="sp_last"/>
+                  </div>
+                </div>
+                <div class="input-field-with-label373">
+                    <div class="date-of-birth14">*Date of Birth</div>
+                    <div class="field565">
+                      <input class="field565" placeholder="YYYY/MM/DD" type="text" name="sp_dob"/>
+                    </div>
+                </div>
+                <div class="input-field-with-label374">
+                    <div class="age14">*Age</div>
+                    <div class="field566">
+                      <input class="label611" placeholder="Enter Age" type="text" name="sp_age"/>
+                    </div>
+                </div>
+                <div class="input-field-with-label377">
+                    <div class="birth-place14">*Birth Place</div>
+                    <div class="field569">
+                      <input class="label614" placeholder="Enter Birth Place" type="text" name="sp_birth_place"/>
+                    </div>
+                </div>
+                <div class="input-field-with-label375">
+                    <div class="nationality14">*Nationality</div>
+                    <div class="field567">
+                      <input class="label612" placeholder="Enter Nationality" type="text" name="sp_nationality"/>
+                    </div>
+                  </div>
+                  <div class="input-field-with-label376">
+                    <div class="citizenship15">*Citizenship</div>
+                    <div class="field568">
+                      <input class="label613" placeholder="Enter Citizenship" type="text" name="sp_citizenship"/>
+                    </div>
+                  </div>
+                  <div class="input-field-with-label378">
+                    <div class="mothers-maiden-name14">
+                      * Mother's Maiden Name
+                    </div>
+                    <div class="field570">
+                      <input class="label615" placeholder="Enter Mother's Maiden Name" type="text" name="sp_mothers_maiden_name"/>
+                    </div>
+                  </div>
+                <div class="input-field-with-label369">
+                  <div class="sss-no-or14">*SSS No. or GSIS No.</div>
+                  <div class="field560">
+                    <input class="label605" placeholder="Enter SSS No. or GSIS No." type="text" name="sp_sssno"/>
+                  </div>
+                </div>
+                <div class="input-field-with-label370">
+                  <div class="tax-identification-no14">
+                    *Tax Identification No. (TIN)
+                  </div>
+                  <div class="field561">
+                    <input class="label606" placeholder="Enter TIN" type="text" name="sp_tin"/>
+                  </div>
+                </div>
+                <div class="input-field-with-label367">
+                  <div class="residence-phone14">*Residence Phone</div>
+                  <div class="field558">
+                    <input class="label603" placeholder="Enter Residence Phone" type="text" name="sp_residence_phone"/>
+                  </div>
+                </div>
+                <div class="input-field-with-label368">
+                  <div class="mobile-phone14">*Mobile Phone</div>
+                  <div class="field559">
+                    <input class="label604" placeholder="Enter Mobile Phone" type="text" name="sp_mobilephone" />
+                  </div>
+                </div>
+                <div class="input-field-with-label371">
+                  <div class="email14">*Email</div>
+                  <div class="field562">
+                    <input class="label607" placeholder="Enter Email" type="email" name="sp_email"/>
+                  </div>
+                </div>
+              </div>
+
+        
+            <!--BORROWER'S FINANCIAL INFORMATION INPUTS-->
+            <div class = "financial-info">
+                <div class="borrowers-financial-informati">
+                    BORROWER'S FINANCIAL INFORMATION
+                </div>
+                <div class="employment-type21">*Employment Type</div>
+                <select class="Employment-dropdown" name="borr_emp_type" required>
+                    <option value="" selected disabled>Select Type</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="self-employed">Self-Employed</option>
+                    <option value="professional">Professional</option>
+                    <option value="ofw">OFW</option>
+                </select>         
+
+                <div class="employerbusiness-name13">*Employer/Business Name</div>    
+                <div class="field573">
+                    <input class="label619" placeholder="Enter Employer/Business Name" type="text" name="borr_emp_businessname"/>
+                </div>
+
+                <div class="input-field-with-label384">
+                    <div class="office-address13">*Office Address</div>
+                    <div class="field576">
+                        <input class="label622" placeholder="Enter Office Address" type="text" name="borr_emp_offadd"/>
+                    </div>
+
+                <div class="input-field-with-label379">
+                    <div class="telephone-no16">*Telephone No.</div>
+                    <div class="field571">
+                        <input class="label617" placeholder="Enter Telephone No." type="text" name="borr_emp_telephoneno"/>
+                    </div>
+                </div>
+
+                <div class="nature-of-business13">*Nature of Business</div>
+                <div class="field574">
+                    <input class="label620" placeholder="Enter Nature of Business" type="text" name="borr_emp_nature"/>
+                </div>
+                </div>
+
+                <div class="date-hiredstart-of13">*Date Hired/Start of Business</div>
+                    <div class="field575">
+                    <input class="label621" placeholder="YYYY/MM/DD" type="text" name="borr_emp_datehired"/>
+                </div>
+
+                <div class="input-field-with-label380">
+                    <div class="present-titleposition13">*Present Title/Position</div>
+                    <div class="field572">
+                    <input class="label618" placeholder="Enter Present Title/Position" type="text" name="borr_emp_jobtitle"/>
+                    </div>
+                </div>
+
+                <div class="years-of-employmentbusiness13">*Years of Employment/Business</div>
+                    <div class="field578">
+                    <input class="label624" placeholder="Enter Years of Employment/Business" type="text" name="borr_emp_years"/>
+                </div>
+                
+                <div class="previous-employer13">*Previous Employer</div>
+                    <div class="field577">
+                    <input class="label623" placeholder="Enter Previous Employer" type="text" name="borr_emp_prev"/>
+                </div>
+
+                <div class="field580">*Previous Title/Position</div>
+                    <input class="label626" placeholder="Enter Previous Title/Position" type="text" name="borr_emp_prevtitle"/>
+
+
+                <div class="field582">*Gross Annual Salary</div>
+                    <input class="label628" placeholder="Enter Gross Annual Salary" type="text" name="borr_emp_gas" />
+
+                <div class="allowances-business13">*Allowances Business</div>
+                    <div class="field579">
+                    <input class="label625" placeholder="Enter Allowances Business" type="text" name="borr_emp_allowance"/>
+                </div>
+                
+                <div class="business-income2">*Business Income</div>
+                    <div class="field690">
+                        <input class="label783" placeholder="Enter Business Income" type="text" name="borr_emp_busi_inc"/>
+                </div>
+                
+                <div class="income-commissions13">*Income Commissions</div>
+                <div class="field584">
+                    <input class="label630" placeholder="Enter Income Commissions" type="text" name="borr_emp_comm"/>
+                </div>
+
+                <div class="rental-income13">*Rental Income</div>
+                    <div class="field581">
+                        <input class="label627" placeholder="Enter Rental Income" type="text" name="borr_emp_rental_inc"/>
+                </div>
+
+                <div class="others13">Others:</div>
+                    <div class="field583">
+                        <input class="label629" placeholder="Enter Other Details" type="text" name="borr_emp_other"/>
+                </div>
+
+                <div class="total13">*Total</div>
+                    <div class="field585">
+                    <input class="label631" placeholder="Enter Total" type="text" name="borr_emp_total" required/>
+                </div>
+            </div>
+
+
+            <!--SPOUSE'S FINANCIAL INFORMATION INPUTS-->
+            <div id="spouseFinancialInfo" class="financial-information16 hidden">
+                <div class="spouse-financial-info">
+                    <div class="spouses-financial-information">
+                        SPOUSE'S FINANCIAL INFORMATION
+                    </div>
+                    <div class="employment-type-spouse">*Employment Type</div>
+                    <select class="employment-dropdown-spouse" name="sp_emp_type">
+                        <option value="" selected disabled>Select Type</option>
+                        <option value="unemployed">Unemployed</option>
+                        <option value="self-employed">Self-Employed</option>
+                        <option value="professional">Professional</option>
+                        <option value="ofw">OFW</option>
+                    </select>         
+
+                    <div class="employerbusiness-name-spouse">*Employer/Business Name</div>    
+                    <div class="field-employerbusiness-name-spouse">
+                        <input class="input-employerbusiness-name-spouse" placeholder="Enter Employer/Business Name" type="text" name="sp_emp_businessname"/>
+                    </div>
+
+                    <div class="input-field-with-label-spouse">
+                        <div class="office-address-spouse">*Office Address</div>
+                        <div class="field-office-address-spouse">
+                            <input class="input-office-address-spouse" placeholder="Enter Office Address" type="text" name="sp_emp_offadd"/>
+                        </div>
+
+                        <div class="input-field-with-label-spouse">
+                            <div class="telephone-no-spouse">*Telephone No.</div>
+                            <div class="field-telephone-no-spouse">
+                                <input class="input-telephone-no-spouse" placeholder="Enter Telephone No." type="text" name="sp_emp_telephoneno"/>
+                            </div>
+                        </div>
+
+                        <div class="nature-of-business-spouse">*Nature of Business</div>
+                        <div class="field-nature-of-business-spouse">
+                            <input class="input-nature-of-business-spouse" placeholder="Enter Nature of Business" type="text" name="sp_emp_nature"/>
+                        </div>
+                    </div>
+
+                    <div class="date-hiredstart-of-spouse">*Date Hired/Start of Business</div>
+                    <div class="field-date-hiredstart-of-spouse">
+                        <input class="input-date-hiredstart-of-spouse" placeholder="YYYY/MM/DD" type="text" name="sp_emp_datehired"/>
+                    </div>
+
+                    <div class="input-field-with-label-spouse">
+                        <div class="present-titleposition-spouse">*Present Title/Position</div>
+                        <div class="field-present-titleposition-spouse">
+                            <input class="input-present-titleposition-spouse" placeholder="Enter Present Title/Position" type="text" name="sp_emp_jobtitle"/>
+                        </div>
+                    </div>
+
+                    <div class="years-of-employmentbusiness-spouse">*Years of Employment/Business</div>
+                    <div class="field-years-of-employmentbusiness-spouse">
+                        <input class="input-years-of-employmentbusiness-spouse" placeholder="Enter Years of Employment/Business" type="text" name="sp_emp_years"/>
+                    </div>
+
+                    <div class="previous-employer-spouse">*Previous Employer</div>
+                    <div class="field-previous-employer-spouse">
+                        <input class="input-previous-employer-spouse" placeholder="Enter Previous Employer" type="text" name="sp_emp_prev"/>
+                    </div>
+
+                    <div class="previous-titleposition-spouse">*Previous Title/Position</div>
+                    <input class="input-previous-titleposition-spouse" placeholder="Enter Previous Title/Position" type="text" name="sp_emp_prevtitle"/>
+
+                    <div class="gross-annual-salary-spouse">*Gross Annual Salary</div>
+                    <input class="input-gross-annual-salary-spouse" placeholder="Enter Gross Annual Salary" type="text" name="sp_emp_gas"/>
+
+                    <div class="allowances-business-spouse">*Allowances Business</div>
+                    <div class="field-allowances-business-spouse">
+                        <input class="input-allowances-business-spouse" placeholder="Enter Allowances Business" type="text" name="sp_emp_allowance"/>
+                    </div>
+
+                    <div class="business-income-spouse">*Business Income</div>
+                    <div class="field-business-income-spouse">
+                        <input class="input-business-income-spouse" placeholder="Enter Business Income" type="text" name="sp_emp_busi_inc"/>
+                    </div>
+
+                    <div class="income-commissions-spouse">*Income Commissions</div>
+                    <div class="field-income-commissions-spouse">
+                        <input class="input-income-commissions-spouse" placeholder="Enter Income Commissions" type="text" name="sp_emp_comm"/>
+                    </div>
+
+                    <div class="rental-income-spouse">*Rental Income</div>
+                    <div class="field-rental-income-spouse">
+                        <input class="input-rental-income-spouse" placeholder="Enter Rental Income" type="text" name="sp_emp_rental_inc"/>
+                    </div>
+
+                    <div class="others-spouse">Others:</div>
+                    <div class="field-others-spouse">
+                        <input class="input-others-spouse" placeholder="Enter Other Details" type="text" name="sp_emp_other" />
+                    </div>
+
+                    <div class="total-spouse">*Total</div>
+                    <div class="field-total-spouse">
+                        <input class="input-total-spouse" placeholder="Enter Total" type="text" name="sp_emp_total"/>
+                    </div>
+                    </div>
+            </div>
+
+
+            <!--BORROWER EXISTING LOAN INFORMATION INPUTS-->
+                <div id="loanContainer">    
+                    <div class="existing-loan-information13">
+                        <div class="existing-loan-details1">
+                        <div class="existing-loan-information14">
+                            EXISTING LOAN INFORMATION            
+                        </div>
+                        <div class="existing-loan-fields">
+                            <div class="input-field-with-label430">
+                            <div class="name-of-creditorbank8">
+                                *Name of Creditor/Bank
+                            </div>
+                            <div class="field622">
+                                <input class="label671" placeholder="Enter Name of Creditor/Bank" type="text" name="creditor_name[]" />
+                            </div>
+                            </div>
+                            <div class="input-field-with-label431">
+                            <div class="type-of-loan8">*Type of Loan</div>
+                            <div class="field623">
+                                <input class="label672" placeholder="Enter Type of Loan" type="text" name="loan_type[]"/>
+                            </div>
+                            </div>
+                            <div class="input-field-with-label432">
+                            <div class="maturity-date8">*Maturity Date</div>
+                            <div class="field624">
+                                <input class="label673" placeholder="YYYY/MM/DD" type="text" name="maturity_date[]"/>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="loan-amount-fields">
+                        <div class="input-field-with-label433">
+                            <div class="original-loan-amount8">
+                            *Original Loan Amount
+                            </div>
+                            <div class="field625">
+                            <input class="label674" placeholder="Enter Original Loan Amount" type="text" name="orig_loan_amt[]"/>
+                            </div>
+                        </div>
+                        <div class="input-field-with-label434">
+                            <div class="outstanding-balance8">
+                            *Outstanding Balance
+                            </div>
+                            <div class="field626">
+                            <input class="label675" placeholder="Enter Outstanding Balance" type="text" name="outstanding_bal[]"/>
+                            </div>
+                        </div>
+                        <div class="input-field-with-label435">
+                            <div class="monthly-amortization9">
+                            *Monthly Amortization
+                            </div>
+                            <div class="field627">
+                            <input class="label676" placeholder="Enter Monthly Amortization" type="text" name="monthly_amortization[]"/>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <button id="addLoanBtn" class="add-btn" type="button">Add Existing Loan</button>
+                </div>
+
+
+            <!--BORROWER DEPOSIT ACCOUNT INFORMATION INPUTS-->
+                <div id="accountContainer">
+                <div class="borrower-information18">
+                    <div class="borrower-financial-info1">
+                        <div class="borrowers-financial-informati17">DEPOSIT ACCOUNTS INFORMATION</div>
+                        <div class="account-info3">
+                        <div class="input-field-with-label436">
+                            <div class="account-number10">*Account Number</div>
+                            <div class="field628">
+                            <input class="label677" placeholder="Enter Account Number" type="text" name="acc_number[]" required/>
+                            </div>
+                        </div>
+                        <div class="account-fields1">
+                            <div class="account-type10">*Account Type</div>
+                            <div class="component-2710">
+                            <select class="dropdown8" name="acc_type[]" required>
+                                <option value="" selected disabled>Select Account Type</option>
+                                <option value="Savings">Savings</option>
+                                <option value="Checking">Checking</option>
+                                <option value="Time Deposit">Time Deposit</option>
+                            </select>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="input-field-with-label437">
+                        <div class="bank-and-branch8">*Bank and Branch Address</div>
+                        <div class="field629">
+                        <input class="label679" placeholder="Enter Bank and Branch Address" type="text" name="bnb_add[]" required/>
+                        </div>
+                    </div>
+                    </div>
+                    <button id="addAccountBtn" class="add-btn" type="button">Add Deposit Account</button>
+                </div>
+
+                <button id="saveButton" class="primary-button31">
+                  <b class="save2">SAVE</b>
+                </button>
+            </div>
+        </div>
+      </section>
+    </form>
+  </main>
+        <footer class="footer18">
+            <div class="all-rights-reserved-container18">
+              <p class="all-rights-reserved18">© 2024 All rights reserved.</p>
+              <p class="made-by-students18">
+                Made by students from Polytechnic University of the Philippines -
+                Manila.
+              </p>
+            </div>
+            <div class="footer-child12"></div>
+          </footer>
+        </div>
+        
+                    <!-- JAVASCRIPT CODES-->
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+        const maritalStatus = document.getElementById('maritalStatus');
+        const spousePersonalInfo = document.getElementById('spousePersonalInfo');
+        const spouseFinancialInfo = document.getElementById('spouseFinancialInfo');
+        const loanContainer = document.getElementById('loanContainer');
+        const accountContainer = document.getElementById('accountContainer');
+        const addLoanBtn = document.getElementById('addLoanBtn');
+        const addAccountBtn = document.getElementById('addAccountBtn');
+        const form = document.getElementById('profileForm');
+        const saveButton = document.getElementById('saveButton');
+ 
+         maritalStatus.addEventListener('change', function() {
+           if (this.value === 'married') {
+             spousePersonalInfo.classList.remove('hidden');
+             spouseFinancialInfo.classList.remove('hidden');
+           } else {
+             spousePersonalInfo.classList.add('hidden');
+             spouseFinancialInfo.classList.add('hidden');
+           }
+
+         });
+
+         function addFields(container, selector, buttonId) {
+            const originalSection = container.querySelector(selector);
+            if (originalSection) {
+                const newSection = originalSection.cloneNode(true);
+                
+                // Clear input values and reset dropdowns
+                newSection.querySelectorAll('input').forEach(input => input.value = '');
+                newSection.querySelectorAll('select').forEach(select => select.selectedIndex = 0);
+                
+                // Add delete button
+                const deleteBtn = document.createElement('button');
+                deleteBtn.textContent = 'Delete';
+                deleteBtn.className = 'delete-btn';
+                deleteBtn.onclick = function() {
+                    container.removeChild(newSection);
+                };
+                newSection.appendChild(deleteBtn);
+                
+                // Insert the new section before the "Add" button
+                const addButton = document.getElementById(buttonId);
+                container.insertBefore(newSection, addButton);
+            }
+        }
+
+                if (addLoanBtn) {
+                    addLoanBtn.addEventListener('click', function(event) {
+                        event.preventDefault();
+                        addFields(loanContainer, '.existing-loan-information13', 'addLoanBtn');
+                    });
+                }
+
+                if (addAccountBtn) {
+                    addAccountBtn.addEventListener('click', function(event) {
+                        event.preventDefault();
+                        addFields(accountContainer, '.borrower-information18', 'addAccountBtn');
+                    });
+                }
+
+            // Add delete buttons to existing sections
+            function addDeleteButtonsToExisting(container, selector) {
+                const sections = container.querySelectorAll(selector);
+                sections.forEach((section, index) => {
+                    if (index === 0) return; // Skip the first (original) section
+                    const deleteBtn = document.createElement('button');
+                    deleteBtn.textContent = 'Delete';
+                    deleteBtn.className = 'delete-btn';
+                    deleteBtn.onclick = function() {
+                        container.removeChild(section);
+                    };
+                    section.appendChild(deleteBtn);
+                });
+            }
+
+            addDeleteButtonsToExisting(loanContainer, '.existing-loan-information13');
+            addDeleteButtonsToExisting(accountContainer, '.borrower-information18');
+        });
+
+
+        function checkFormValidity() {
+          const requiredFields = form.querySelectorAll('[required]:not([hidden]):not(.hidden)');
+          let isValid = true;
+
+          requiredFields.forEach(field => {
+            if (!field.value.trim()) {
+              isValid = false;
+            }
+          });
+          };
+
+       var homeText = document.getElementById("homeText");
+       if (homeText) {
+         homeText.addEventListener("click", function (e) {
+           window.location.href = "./landing-page.html";
+         });
+       }
+       
+       var aboutText = document.getElementById("aboutText");
+       if (aboutText) {
+         aboutText.addEventListener("click", function (e) {
+           window.location.href = "./about-us.html";
+         });
+       }
+       
+       var contactAgreementText = document.getElementById("contactAgreementText");
+       if (contactAgreementText) {
+         contactAgreementText.addEventListener("click", function (e) {
+           window.location.href = "./contact-agreement.html";
+         });
+       }
+       
+       var primaryButton = document.getElementById("primaryButton");
+       if (primaryButton) {
+         primaryButton.addEventListener("click", function (e) {
+           window.location.href = "./landing-page.html";
+         });
+       }
+       
+       var userRequestsContainer = document.getElementById("userRequestsContainer");
+       if (userRequestsContainer) {
+         userRequestsContainer.addEventListener("click", function (e) {
+           window.location.href = "./newreq.html";
+         });
+       }
+       
+       var saveButton = document.getElementById("saveButton");
+        if (saveButton) {
+          saveButton.addEventListener("click", function (e) {
+            e.preventDefault(); // Prevent the default form submission
+            
+            // Check if the button is not disabled
+            if (!this.disabled) {
+              // Get the form element
+              var form = document.getElementById("profileForm");
+              
+              // Submit the form
+              form.submit();
+              
+              // Add an event listener for when the form is submitted
+              form.addEventListener('submit', function() {
+                // Redirect to saved-profile.html after a short delay
+                setTimeout(function() {
+                  window.location.href = "saved-profile.html";
+                }, 100); // 100ms delay to allow form submission to complete
+              });
+            } else {
+              alert("Please fill all required fields before saving.");
+            }
+          });
+        }
+       </script>
+    </body>
+</html>

@@ -186,6 +186,7 @@
 .admin-deposit .frame {
   display: inline-flex;
   align-items: center;
+  gap: 2px;
   position: absolute;
   top: 0;
   left: 0;
@@ -389,12 +390,12 @@
 }
 
 .admin-deposit .table {
-   display: flex;
-  width: 1313px;
-  height: 93px;
+  display: flex;
+  width: 1258px;
   align-items: center;
   padding: 10px;
   position: relative;
+  left: -16px;
 }
 
 .admin-deposit .account-number {
@@ -574,25 +575,13 @@
   left: 312px;
 }
 
-
-.hidden-input {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border: none;
-  padding: 0;
-  margin: 0;
-  opacity: 0;
-}
-
 button {
-  border: none; 
-  background: none; 
-  padding: 0; 
+  border: none; /* Removes the border */
+  background: none; /* Removes any background color */
+  padding: 0; /* Removes default padding */
   cursor: pointer;
 }
 
 button img {
-  display: block; 
+  display: block; /* Ensures the image takes up the full button */
 }
-
